@@ -168,8 +168,11 @@ def llm(prompt):
                       "generationConfig": {"temperature": 0.8, "responseMimeType": "application/json"}},
                 timeout=90)
         if r.status_code == 429 or r.status_code >= 500:
-            time.sleep(20 * (attempt + 1))
+            print(f"[llm] HTTP {r.status_code}: {r.text[:400]}")
+            time.sleep(25 * (attempt + 1))
             continue
+        if r.status_code >= 400:
+            print(f"[llm] HTTP {r.status_code}: {r.text[:400]}")
         r.raise_for_status()
         try:
             data = r.json()
@@ -318,3 +321,4 @@ if __name__ == "__main__":
             except Exception:
                 pass
         sys.exit(1)
+            
