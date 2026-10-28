@@ -1,0 +1,62 @@
+name: news-bot
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: news-bot
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run bot
+        run: python main.py
+        env:
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_CHANNEL: ${{ secrets.TG_CHANNEL }}
+          TG_ADMIN_ID: ${{ secrets.TG_ADMIN_ID }}
+          LLM_PROVIDER: ${{ vars.LLM_PROVIDER }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OPENROUTER_MODELS: ${{ vars.OPENROUTER_MODELS }}
+          DAILY_LIMIT: ${{ vars.DAILY_LIMIT }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+          MAX_POSTS_PER_RUN: ${{ vars.MAX_POSTS_PER_RUN }}
+          MAX_AGE_HOURS: ${{ vars.MAX_AGE_HOURS }}
+          MIN_SOURCES: ${{ vars.MIN_SOURCES }}
+          MAX_FEED_ITEMS: ${{ vars.MAX_FEED_ITEMS }}
+          HTTP_TIMEOUT_SECONDS: ${{ vars.HTTP_TIMEOUT_SECONDS }}
+          SIM_THRESHOLD: ${{ vars.SIM_THRESHOLD }}
+          DRY_RUN: ${{ vars.DRY_RUN }}
+          PAUSED: ${{ vars.PAUSED }}
+      - name: Save state
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "news-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add state.json state.json.bak || true
+          if ! git diff --cached --quiet; then
+            git commit -m "Update news bot state [skip ci]"
+            git push origin HEAD:${GITHUB_REF_NAME}
+          else
+            echo "State unchanged"
+          fi
