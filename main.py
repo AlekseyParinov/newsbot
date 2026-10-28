@@ -23,7 +23,7 @@ MODEL = env("GEMINI_MODEL", "gemini-2.5-flash")
 OR_KEY = env("OPENROUTER_API_KEY")
 OR_MODELS = [m.strip() for m in env(
     "OPENROUTER_MODELS",
-    "meta-llama/llama-3.3-70b-instruct:free,mistralai/mistral-small-3.1-24b-instruct:free,google/gemma-4-31b-it:free",
+    "nvidia/nemotron-3-super-120b-a12b:free,nvidia/nemotron-3.5-lightning:free,nvidia/nemotron-3-ultra-550b-a55b:free,openrouter/free,google/gemma-4-31b-it:free",
 ).split(",") if m.strip()]
 # дневной лимит запросов к модели (у бесплатного OpenRouter без пополнения: 50 в сутки)
 DAILY_LIMIT = int(env("DAILY_LIMIT", "45" if PROVIDER == "openrouter" else "0"))
@@ -148,42 +148,65 @@ def parse_json(txt):
         return None
 
 
-def llm(prompt):
-    attempts = 2 if PROVIDER == "openrouter" else 3
-    for attempt in range(attempts):
+def _extract(data):
+    if PROVIDER == "openrouter":
+        return data["choices"][0]["message"]["content"]
+    return data["candidates"][0]["content"]["parts"][0]["text"]
+
+
+def llm_openrouter(prompt):
+    """Пробуем модели по одной: если одна перегружена, берём следующую."""
+    msg = prompt + "\n\nОтвечай ТОЛЬКО одним JSON-объектом, без пояснений и без ```."
+    for model in OR_MODELS:
         spend()
-        if PROVIDER == "openrouter":
-            r = requests.post(
-                "https://openrouter.ai/api/v1/chat/completions",
-                headers={"Authorization": f"Bearer {OR_KEY}"},
-                json={"models": OR_MODELS, "temperature": 0.8,
-                      "messages": [{"role": "user", "content":
-                                    prompt + "\n\nОтвечай ТОЛЬКО одним JSON-объектом, без пояснений и без ```."}]},
-                timeout=120)
-        else:
-            url = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent"
-            r = requests.post(
-                url, headers={"x-goog-api-key": GEMINI_KEY},
-                json={"contents": [{"parts": [{"text": prompt}]}],
-                      "generationConfig": {"temperature": 0.8, "responseMimeType": "application/json"}},
-                timeout=90)
-        if r.status_code == 429 or r.status_code >= 500:
-            print(f"[llm] HTTP {r.status_code}: {r.text[:400]}")
-            time.sleep(25 * (attempt + 1))
+        r = requests.post(
+            "https://openrouter.ai/api/v1/chat/completions",
+            headers={"Authorization": f"Bearer {OR_KEY}"},
+            json={"model": model, "temperature": 0.8,
+                  "messages": [{"role": "user", "content": msg}]},
+            timeout=120)
+        if r.status_code in (401, 402, 403):
+            print(f"[llm] {model}: HTTP {r.status_code}: {r.text[:300]}")
+            r.raise_for_status()
+        if r.status_code != 200:
+            print(f"[llm] {model}: HTTP {r.status_code}: {r.text[:200]}")
+            time.sleep(3)
             continue
-        if r.status_code >= 400:
-            print(f"[llm] HTTP {r.status_code}: {r.text[:400]}")
-        r.raise_for_status()
         try:
             data = r.json()
-            if PROVIDER == "openrouter":
-                txt = data["choices"][0]["message"]["content"]
-            else:
-                txt = data["candidates"][0]["content"]["parts"][0]["text"]
+            post = parse_json(_extract(data))
+        except (KeyError, IndexError, TypeError, ValueError):
+            print(f"[llm] {model}: странный ответ, беру следующую")
+            continue
+        if post is None:
+            print(f"[llm] {model}: не JSON, беру следующую")
+            continue
+        print(f"[llm] ответила модель: {data.get('model', model)}")
+        return post
+    raise QuotaError("ни одна бесплатная модель не ответила")
+
+
+def llm(prompt):
+    if PROVIDER == "openrouter":
+        return llm_openrouter(prompt)
+    for attempt in range(3):
+        spend()
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent"
+        r = requests.post(
+            url, headers={"x-goog-api-key": GEMINI_KEY},
+            json={"contents": [{"parts": [{"text": prompt}]}],
+                  "generationConfig": {"temperature": 0.8, "responseMimeType": "application/json"}},
+            timeout=90)
+        if r.status_code == 429 or r.status_code >= 500:
+            print(f"[llm] HTTP {r.status_code}: {r.text[:300]}")
+            time.sleep(25 * (attempt + 1))
+            continue
+        r.raise_for_status()
+        try:
+            return parse_json(_extract(r.json()))
         except (KeyError, IndexError, TypeError, ValueError):
             return None
-        return parse_json(txt)
-    raise QuotaError("LLM: лимит или сбой")
+    raise QuotaError("Gemini: лимит или сбой")
 
 
 def sources_block(cluster):
@@ -261,6 +284,7 @@ def format_post(post, cluster):
 
 # ---------- главный цикл ----------
 def run():
+    print(f"[info] провайдер: {PROVIDER}; модели: {OR_MODELS if PROVIDER == 'openrouter' else MODEL}")
     state = load_state()
     budget_init(state)
     seen = set(state["seen"])
@@ -321,4 +345,3 @@ if __name__ == "__main__":
             except Exception:
                 pass
         sys.exit(1)
-            
