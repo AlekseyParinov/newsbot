@@ -28,7 +28,16 @@
     "dacf07e22e7d",
     "c8995cb0a8e67961ad31",
     "8a895a69f21cf1106737",
-    "eb1d029d640fd2e5ca77"
+    "eb1d029d640fd2e5ca77",
+    "ae8c2582e8187c9180e3",
+    "bb1bd44a2c782f2adbf1",
+    "ba13915199120bbd41c6",
+    "defc37d4c072df6a550a",
+    "c5e155c97b838a2f62b0",
+    "2639cc8ab9f19a535197",
+    "e2e09c7e0a9bdedf8e65",
+    "6f9a5808525e81d03e24",
+    "ffc251fa08aed190ad3d"
   ],
   "titles": [
     [
@@ -109,6 +118,32 @@
       "путин",
       "рейсы",
       "росси"
+    ],
+    [
+      "2026",
+      "атак",
+      "выручк",
+      "годов",
+      "дата",
+      "отозвал",
+      "после",
+      "прогноз",
+      "финпоказател",
+      "центр",
+      "цоды",
+      "яндекс"
+    ],
+    [
+      "150",
+      "440",
+      "более",
+      "бпла",
+      "брянск",
+      "курск",
+      "област",
+      "сбили",
+      "сутки",
+      "украинских"
     ]
   ],
   "items": {
@@ -126,6 +161,51 @@
       "status": "published",
       "updated_at": "2026-10-28T12:28:00.504076+00:00",
       "reason": ""
+    },
+    "ae8c2582e8187c9180e3": {
+      "status": "rejected",
+      "updated_at": "2026-10-29T06:41:40.263539+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "bb1bd44a2c782f2adbf1": {
+      "status": "rejected",
+      "updated_at": "2026-10-29T06:41:40.263539+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "ba13915199120bbd41c6": {
+      "status": "published",
+      "updated_at": "2026-10-29T06:42:46.953178+00:00",
+      "reason": ""
+    },
+    "defc37d4c072df6a550a": {
+      "status": "published",
+      "updated_at": "2026-10-29T06:42:46.953178+00:00",
+      "reason": ""
+    },
+    "c5e155c97b838a2f62b0": {
+      "status": "published",
+      "updated_at": "2026-10-29T06:42:46.953178+00:00",
+      "reason": ""
+    },
+    "2639cc8ab9f19a535197": {
+      "status": "rejected",
+      "updated_at": "2026-10-29T06:44:21.396365+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "e2e09c7e0a9bdedf8e65": {
+      "status": "rejected",
+      "updated_at": "2026-10-29T06:44:21.396365+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "6f9a5808525e81d03e24": {
+      "status": "published",
+      "updated_at": "2026-10-29T06:46:01.405771+00:00",
+      "reason": ""
+    },
+    "ffc251fa08aed190ad3d": {
+      "status": "published",
+      "updated_at": "2026-10-29T06:46:01.405771+00:00",
+      "reason": ""
     }
   },
   "events": {
@@ -138,21 +218,42 @@
         "Лента.ру",
         "РБК"
       ]
+    },
+    "1d2ea8de8bd6a83fffe5": {
+      "status": "published",
+      "headline": "Яндекс отозвал прогнозы по финпоказателям на 2026 год после атак на дата-центры.",
+      "published_at": "2026-10-29T06:42:46.953201+00:00",
+      "sources": [
+        "Интерфакс",
+        "РБК",
+        "ТАСС"
+      ]
+    },
+    "e6a169fc80357bd0d1d9": {
+      "status": "published",
+      "headline": "В Брянской и Курской областях за сутки сбили более 440 и 150 БПЛА, сообщили TASS и RIA Novosti",
+      "published_at": "2026-10-29T06:46:01.405798+00:00",
+      "sources": [
+        "РИА Новости",
+        "ТАСС"
+      ]
     }
   },
   "budget": {
-    "day": "2026-10-28",
-    "n": 45
+    "day": "2026-10-29",
+    "n": 12
   },
   "stats": {},
   "last_run": {
-    "at": "2026-10-28T22:48:46.113492+00:00",
+    "at": "2026-10-29T06:46:01.405900+00:00",
     "stats": {
-      "materials_received": 227,
-      "clusters": 205,
-      "llm_errors": 1,
-      "llm_requests_local_counter": 45,
-      "duration_seconds": 25.65
+      "materials_received": 260,
+      "clusters": 246,
+      "rejected": 2,
+      "published": 2,
+      "age_seconds_total": 2798,
+      "llm_requests_local_counter": 12,
+      "duration_seconds": 330.7
     }
   },
   "daily_stats": {
@@ -162,6 +263,15 @@
       "llm_errors": 1,
       "llm_requests_local_counter": 45,
       "duration_seconds": 25.65
+    },
+    "2026-10-29": {
+      "materials_received": 260,
+      "clusters": 246,
+      "rejected": 2,
+      "published": 2,
+      "age_seconds_total": 2798,
+      "llm_requests_local_counter": 12,
+      "duration_seconds": 330.7
     }
   }
 }
