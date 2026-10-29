@@ -15,6 +15,7 @@ import time
 import traceback
 from collections import Counter
 from datetime import datetime, timedelta, timezone
+from functools import lru_cache
 from pathlib import Path
 from typing import Any
 
@@ -94,6 +95,7 @@ def clean(value: Any) -> str:
     return re.sub(r"\s+", " ", html.unescape(text)).strip()
 
 
+@lru_cache(maxsize=50000)
 def normalize_text(text: str) -> str:
     text = clean(text).lower().replace("ё", "е")
     text = re.sub(r"https?://\S+|www\.\S+", " ", text)
@@ -114,8 +116,15 @@ def normalize_text(text: str) -> str:
     return " ".join(tokens)
 
 
-def tokens(text: str) -> set[str]:
-    return set(normalize_text(text).split())
+@lru_cache(maxsize=50000)
+def tokens(text: str) -> frozenset[str]:
+    return frozenset(normalize_text(text).split())
+
+
+def _jaccard(a: Any, b: Any) -> float:
+    if not a or not b:
+        return 0.0
+    return len(a & b) / len(a | b)
 
 
 def similarity(a: str | set[str], b: str | set[str]) -> float:
@@ -137,7 +146,7 @@ def digest(value: str) -> str:
 
 
 def _empty_state() -> dict[str, Any]:
-    return {"version": 2, "seen": [], "titles": [], "items": {}, "events": {},
+    return {"version": 2, "seen": [], "titles": [], "heads": [], "items": {}, "events": {},
             "budget": {"day": "", "n": 0}, "stats": {}}
 
 
@@ -150,6 +159,7 @@ def _validate_state(state: Any) -> dict[str, Any]:
     result["version"] = 2
     result["seen"] = list(result.get("seen", [])) if isinstance(result.get("seen", []), list) else []
     result["titles"] = list(result.get("titles", [])) if isinstance(result.get("titles", []), list) else []
+    result["heads"] = list(result.get("heads", [])) if isinstance(result.get("heads", []), list) else []
     result["items"] = result.get("items") if isinstance(result.get("items"), dict) else {}
     result["events"] = result.get("events") if isinstance(result.get("events"), dict) else {}
     result["budget"] = result.get("budget") if isinstance(result.get("budget"), dict) else {"day": "", "n": 0}
@@ -199,6 +209,7 @@ def save_state(state: dict[str, Any], path: Path | str | None = None) -> None:
     state["version"] = 2
     state["seen"] = list(dict.fromkeys(state.get("seen", [])))[-5000:]
     state["titles"] = state.get("titles", [])[-500:]
+    state["heads"] = state.get("heads", [])[-300:]
     # Keep bounded item/event history; published event fingerprints remain represented by titles.
     if isinstance(state.get("items"), dict) and len(state["items"]) > 5000:
         state["items"] = dict(list(state["items"].items())[-5000:])
@@ -286,53 +297,68 @@ def _extract(data: dict[str, Any], provider: str | None = None) -> str:
     return "\n".join(p.get("text", "") for p in data["candidates"][0]["content"]["parts"] if isinstance(p, dict))
 
 
+class BadOutputError(QuotaError):
+    """Models answered, but never with usable JSON (not an outage)."""
+
+
+DEAD_MODELS: set[str] = set()      # модели, отказавшие в этом запуске (429/5xx/404...)
+BAD_OUTPUT: Counter = Counter()    # сколько раз модель вернула мусор вместо JSON
+PREFERRED: list[str] = []          # модель, которая уже ответила в этом запуске
+
+
 def llm_openrouter(prompt: str, state: dict[str, Any]) -> dict[str, Any]:
     if not OR_KEY:
         raise PermanentLLMError("не задан OPENROUTER_API_KEY")
     if not OR_MODELS:
         raise PermanentLLMError("список OPENROUTER_MODELS пуст")
     msg = prompt + "\n\nВерни только один JSON-объект, без Markdown и пояснений."
-    last_error = "нет доступных моделей"
-    for model in OR_MODELS:
-        for attempt in range(2):
-            spend(state)
-            try:
-                response = SESSION.post(
-                    "https://openrouter.ai/api/v1/chat/completions",
-                    headers={"Authorization": f"Bearer {OR_KEY}", "Content-Type": "application/json"},
-                    json={"model": model, "temperature": 0.2,
-                          "messages": [{"role": "user", "content": msg}],
-                          "response_format": {"type": "json_object"}}, timeout=90)
-            except requests.RequestException as exc:
-                last_error = f"{model}: сетевой сбой {type(exc).__name__}"
-                if attempt == 0:
-                    time.sleep(_retry_delay(None, attempt))
-                    continue
-                break
-            if response.status_code in (401, 402, 403):
-                raise PermanentLLMError(f"OpenRouter HTTP {response.status_code}: {_response_text(response)}")
+    models = [m for m in OR_MODELS if m not in DEAD_MODELS]
+    if PREFERRED and PREFERRED[0] in models:
+        models.remove(PREFERRED[0])
+        models.insert(0, PREFERRED[0])
+    if not models:
+        raise QuotaError("OpenRouter: все модели уже отказали в этом запуске")
+    last_error, transient = "нет доступных моделей", False
+    for model in models:
+        spend(state)  # одна попытка на модель: повторы только сжигают дневной лимит
+        try:
+            response = SESSION.post(
+                "https://openrouter.ai/api/v1/chat/completions",
+                headers={"Authorization": f"Bearer {OR_KEY}", "Content-Type": "application/json"},
+                json={"model": model, "temperature": 0.2,
+                      "messages": [{"role": "user", "content": msg}],
+                      "response_format": {"type": "json_object"}}, timeout=90)
+        except requests.RequestException as exc:
+            last_error, transient = f"{model}: сетевой сбой {type(exc).__name__}", True
+            DEAD_MODELS.add(model)
+            continue
+        if response.status_code in (401, 402, 403):
+            raise PermanentLLMError(f"OpenRouter HTTP {response.status_code}: {_response_text(response)}")
+        if response.status_code != 200:
+            last_error = f"{model}: HTTP {response.status_code}"
             if response.status_code == 429 or response.status_code >= 500:
-                last_error = f"{model}: HTTP {response.status_code}"
-                if attempt == 0:
-                    time.sleep(_retry_delay(response, attempt))
-                    continue
-                break
-            if response.status_code in (400, 404, 422):
-                last_error = f"{model}: HTTP {response.status_code} (модель или формат запроса недоступны)"
-                break
-            try:
-                response.raise_for_status()
-                data = response.json()
-                content = _extract(data, "openrouter")
-                result = parse_json(content)
-            except (requests.RequestException, ValueError, KeyError, IndexError, TypeError):
-                result = None
-            if result is not None:
-                print(f"[llm] provider=openrouter model={data.get('model', model)}")
-                return result
-            last_error = f"{model}: пустой ответ или некорректный JSON"
-            break
-    raise QuotaError(f"OpenRouter: {last_error}; повторы ограничены")
+                transient = True
+            print(f"[llm] {last_error}")
+            DEAD_MODELS.add(model)
+            time.sleep(2)
+            continue
+        data: dict[str, Any] = {}
+        try:
+            data = response.json()
+            result = parse_json(_extract(data, "openrouter"))
+        except (ValueError, KeyError, IndexError, TypeError):
+            result = None
+        if result is not None:
+            PREFERRED[:] = [model]
+            print(f"[llm] provider=openrouter model={data.get('model', model)}")
+            return result
+        BAD_OUTPUT[model] += 1
+        if BAD_OUTPUT[model] >= 2:
+            DEAD_MODELS.add(model)
+        last_error = f"{model}: пустой ответ или некорректный JSON"
+        print(f"[llm] {last_error}")
+    error_cls = QuotaError if transient else BadOutputError
+    raise error_cls(f"OpenRouter: {last_error}")
 
 
 def llm_gemini(prompt: str, state: dict[str, Any]) -> dict[str, Any]:
@@ -426,14 +452,16 @@ def fetch_items(now: datetime | None = None) -> list[dict[str, Any]]:
 
 
 def cluster_similarity(a: dict[str, Any], b: dict[str, Any]) -> float:
-    title_score = similarity(a["title"], b["title"])
-    # Summaries are weaker evidence: only allow them to contribute if titles already have some overlap.
-    title_tokens_a, title_tokens_b = tokens(a["title"]), tokens(b["title"])
-    title_j = len(title_tokens_a & title_tokens_b) / len(title_tokens_a | title_tokens_b) if title_tokens_a and title_tokens_b else 0
-    if title_j < 0.20 and title_score < 0.45:
-        return title_score * 0.65
-    summary_score = similarity(a["title"] + " " + a.get("summary", ""), b["title"] + " " + b.get("summary", ""))
-    return max(title_score, summary_score * 0.85)
+    ta, tb = tokens(a["title"]), tokens(b["title"])
+    title_j = _jaccard(ta, tb)
+    if title_j < 0.20:
+        return title_j * 0.65
+    # Посимвольное сравнение (медленное) только для заголовков, уже имеющих общие слова.
+    seq = difflib.SequenceMatcher(None, normalize_text(a["title"]), normalize_text(b["title"])).ratio()
+    title_score = max(title_j, seq * 0.75)
+    sa = ta | tokens(a.get("summary", ""))
+    sb = tb | tokens(b.get("summary", ""))
+    return max(title_score, _jaccard(sa, sb) * 0.85)
 
 
 def build_clusters(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -521,22 +549,28 @@ VERIFY_PROMPT = """Ты редакционный проверяющий. Это 
 """
 
 
+def _truthy(value: Any) -> bool:
+    return value is True or (isinstance(value, str) and value.strip().lower() == "true")
+
+
 def write_post(cluster: dict[str, Any], state: dict[str, Any]) -> dict[str, Any] | None:
     src = sources_block(cluster)
     post = llm(WRITE_PROMPT.format(src=src, policy=EDITORIAL_POLICY), state)
-    if not isinstance(post, dict) or post.get("skip") is True:
+    if not isinstance(post, dict) or _truthy(post.get("skip")):
         return None
     headline = clean(post.get("headline"))
     body = clean(post.get("text"))
-    if not headline or len(headline) > 160 or len(headline) + len(body) > 350 or len(body) > 260:
+    # Просим модель уложиться в 350 знаков, но отбрасываем только явно слишком длинное.
+    if not headline or len(headline) > 160 or len(body) > 300 or len(headline) + len(body) > 500:
         print("[reject] модель вернула пустой или слишком длинный пост")
         return None
     check = llm(VERIFY_PROMPT.format(src=src, headline=headline, text=body), state)
-    claims = check.get("claims") if isinstance(check, dict) else None
-    if not isinstance(check, dict) or check.get("ok") is not True or not isinstance(claims, list):
+    if not isinstance(check, dict) or not _truthy(check.get("ok")):
         print(f"[reject] фактчек: {clean(check.get('problem') if isinstance(check, dict) else 'невалидный ответ')[:180]}")
         return None
-    if any(not isinstance(claim, dict) or claim.get("supported") is not True for claim in claims):
+    claims = check.get("claims")
+    # Список claims необязателен: слабые модели часто его опускают. Отклоняем только явное «не подтверждено».
+    if isinstance(claims, list) and any(isinstance(c, dict) and c.get("supported") is False for c in claims):
         print("[reject] фактчек содержит неподтверждённое утверждение")
         return None
     return {"headline": headline, "text": body}
@@ -590,6 +624,10 @@ def _run_once() -> dict[str, Any]:
         raise ValueError("LLM_PROVIDER должен быть openrouter или gemini")
     state = load_state()
     budget_init(state)
+    DEAD_MODELS.clear()
+    BAD_OUTPUT.clear()
+    PREFERRED.clear()
+    bad_outputs = 0
     started = time.monotonic()
     stats: Counter[str] = Counter()
     items = fetch_items()
@@ -623,6 +661,22 @@ def _run_once() -> dict[str, Any]:
             continue
         try:
             post = write_post(cluster, state)
+        except BadOutputError as exc:
+            # Не сбой сервиса, а «капризная» новость: считаем неудачу и пробуем следующую.
+            print(f"[llm-bad] {exc}")
+            stats["llm_bad_output"] += 1
+            for item_id in new_ids:
+                entry = state.setdefault("items", {}).get(item_id, {})
+                fails = int(entry.get("fails", 0)) + 1 if isinstance(entry, dict) else 1
+                if fails >= 2:
+                    record_status(state, [item_id], "rejected", "модели не смогли обработать")
+                else:
+                    state["items"][item_id] = {"status": "pending", "fails": fails,
+                                               "updated_at": utcnow().isoformat(), "reason": "некорректный ответ модели"}
+            bad_outputs += 1
+            if bad_outputs >= 2:
+                break
+            continue
         except QuotaError as exc:
             print(f"[quota] {exc}; оставшиеся события сохраняются для следующего запуска")
             stats["llm_errors"] += 1
@@ -639,6 +693,13 @@ def _run_once() -> dict[str, Any]:
             record_status(state, new_ids, "rejected", "пропуск редактором или отказ фактчека")
             stats["rejected"] += 1
             continue
+        head_tokens = tokens(post["headline"])
+        if any(similarity(head_tokens, set(h)) >= 0.5 for h in state.get("heads", []) if isinstance(h, list)):
+            # Ловит дубли между языками: русская и английская заметки об одном событии.
+            record_status(state, new_ids, "duplicate", "дубль по готовому заголовку")
+            stats["duplicates"] += 1
+            print(f"[dup] уже публиковали: {post['headline']}")
+            continue
         try:
             tg_send(TG_CHAT, format_post(post))
         except (requests.RequestException, RuntimeError) as exc:
@@ -652,6 +713,7 @@ def _run_once() -> dict[str, Any]:
             "status": "dry_run" if DRY_RUN else "published", "headline": post["headline"],
             "published_at": utcnow().isoformat(), "sources": cluster["sources"]}
         state.setdefault("titles", []).append(sorted(cluster["stems"]))
+        state.setdefault("heads", []).append(sorted(head_tokens))
         published_titles.append(cluster["stems"])
         posted += 1
         stats["published"] += 1
