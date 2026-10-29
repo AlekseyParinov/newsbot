@@ -804,17 +804,17 @@
   },
   "budget": {
     "day": "2026-10-29",
-    "n": 43
+    "n": 45
   },
   "stats": {},
   "last_run": {
-    "at": "2026-10-29T10:01:31.039690+00:00",
+    "at": "2026-10-29T10:31:14.855253+00:00",
     "stats": {
       "materials_received": 324,
-      "clusters": 299,
+      "clusters": 305,
       "llm_errors": 1,
-      "llm_requests_local_counter": 43,
-      "duration_seconds": 30.13
+      "llm_requests_local_counter": 45,
+      "duration_seconds": 25.98
     }
   },
   "daily_stats": {
@@ -827,10 +827,10 @@
     },
     "2026-10-29": {
       "materials_received": 324,
-      "clusters": 299,
+      "clusters": 305,
       "llm_errors": 1,
-      "llm_requests_local_counter": 43,
-      "duration_seconds": 30.13
+      "llm_requests_local_counter": 45,
+      "duration_seconds": 25.98
     }
   }
 }
