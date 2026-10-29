@@ -804,19 +804,17 @@
   },
   "budget": {
     "day": "2026-10-29",
-    "n": 38
+    "n": 43
   },
   "stats": {},
   "last_run": {
-    "at": "2026-10-29T09:40:36.758596+00:00",
+    "at": "2026-10-29T10:01:31.039690+00:00",
     "stats": {
-      "materials_received": 313,
-      "clusters": 293,
-      "published": 2,
-      "age_seconds_total": 2354,
-      "rejected": 1,
-      "llm_requests_local_counter": 38,
-      "duration_seconds": 590.75
+      "materials_received": 324,
+      "clusters": 299,
+      "llm_errors": 1,
+      "llm_requests_local_counter": 43,
+      "duration_seconds": 30.13
     }
   },
   "daily_stats": {
@@ -828,13 +826,11 @@
       "duration_seconds": 25.65
     },
     "2026-10-29": {
-      "materials_received": 313,
-      "clusters": 293,
-      "published": 2,
-      "age_seconds_total": 2354,
-      "rejected": 1,
-      "llm_requests_local_counter": 38,
-      "duration_seconds": 590.75
+      "materials_received": 324,
+      "clusters": 299,
+      "llm_errors": 1,
+      "llm_requests_local_counter": 43,
+      "duration_seconds": 30.13
     }
   }
 }
