@@ -37,7 +37,21 @@
     "2639cc8ab9f19a535197",
     "e2e09c7e0a9bdedf8e65",
     "6f9a5808525e81d03e24",
-    "ffc251fa08aed190ad3d"
+    "ffc251fa08aed190ad3d",
+    "0fb7a6083f544cc27cba",
+    "c32003cc266d7ce73901",
+    "9bfe43053dd5e7f63edd",
+    "92bf60bc959880dc43e8",
+    "722eaf8f856c48d57bed",
+    "97f2aa0f7ad2ac5d2592",
+    "e06867d2ae81c235a156",
+    "d08058c779d46474b05b",
+    "b1a5f41f97660c49601c",
+    "1f1c9a3948d2e69514c9",
+    "2fc739645600a26596f9",
+    "6cf61e2600dc1de80a32",
+    "6e5938dfa9681d72e15f",
+    "0bad92db3a16596c0720"
   ],
   "titles": [
     [
@@ -144,6 +158,52 @@
       "сбили",
       "сутки",
       "украинских"
+    ],
+    [
+      "starlink",
+      "генеральн",
+      "замедлен",
+      "инспектор",
+      "ограничени",
+      "отказалс",
+      "пентагон",
+      "работ",
+      "расследовать",
+      "сбои",
+      "стал",
+      "украин"
+    ],
+    [
+      "беспилотник",
+      "бпла",
+      "над",
+      "несколько",
+      "нет",
+      "пострадавших",
+      "разрушен",
+      "сбили",
+      "удмурти"
+    ]
+  ],
+  "heads": [
+    [
+      "starlink",
+      "запрос",
+      "отказалс",
+      "пентагон",
+      "перебо",
+      "расследовать",
+      "сенатор",
+      "украин"
+    ],
+    [
+      "беспилотник",
+      "над",
+      "несколько",
+      "нет",
+      "пострадавших",
+      "сбили",
+      "удмурти"
     ]
   ],
   "items": {
@@ -206,6 +266,76 @@
       "status": "published",
       "updated_at": "2026-10-29T06:46:01.405771+00:00",
       "reason": ""
+    },
+    "0fb7a6083f544cc27cba": {
+      "status": "published",
+      "updated_at": "2026-10-29T07:50:41.968236+00:00",
+      "reason": ""
+    },
+    "c32003cc266d7ce73901": {
+      "status": "published",
+      "updated_at": "2026-10-29T07:50:41.968236+00:00",
+      "reason": ""
+    },
+    "9bfe43053dd5e7f63edd": {
+      "status": "published",
+      "updated_at": "2026-10-29T07:50:41.968236+00:00",
+      "reason": ""
+    },
+    "92bf60bc959880dc43e8": {
+      "status": "published",
+      "updated_at": "2026-10-29T07:50:41.968236+00:00",
+      "reason": ""
+    },
+    "722eaf8f856c48d57bed": {
+      "status": "published",
+      "updated_at": "2026-10-29T07:50:41.968236+00:00",
+      "reason": ""
+    },
+    "97f2aa0f7ad2ac5d2592": {
+      "status": "rejected",
+      "updated_at": "2026-10-29T07:51:29.678633+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "e06867d2ae81c235a156": {
+      "status": "rejected",
+      "updated_at": "2026-10-29T07:51:29.678633+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "d08058c779d46474b05b": {
+      "status": "rejected",
+      "updated_at": "2026-10-29T07:51:29.678633+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "b1a5f41f97660c49601c": {
+      "status": "rejected",
+      "updated_at": "2026-10-29T07:51:29.678633+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "1f1c9a3948d2e69514c9": {
+      "status": "rejected",
+      "updated_at": "2026-10-29T07:51:29.678633+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "2fc739645600a26596f9": {
+      "status": "rejected",
+      "updated_at": "2026-10-29T07:52:02.765073+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "6cf61e2600dc1de80a32": {
+      "status": "rejected",
+      "updated_at": "2026-10-29T07:52:02.765073+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "6e5938dfa9681d72e15f": {
+      "status": "published",
+      "updated_at": "2026-10-29T07:53:17.362934+00:00",
+      "reason": ""
+    },
+    "0bad92db3a16596c0720": {
+      "status": "published",
+      "updated_at": "2026-10-29T07:53:17.362934+00:00",
+      "reason": ""
     }
   },
   "events": {
@@ -237,23 +367,44 @@
         "РИА Новости",
         "ТАСС"
       ]
+    },
+    "914e67a63e3a9bad3712": {
+      "status": "published",
+      "headline": "Пентагон отказался расследовать запросы сенаторов о перебоях Starlink в Украине.",
+      "published_at": "2026-10-29T07:50:41.968263+00:00",
+      "sources": [
+        "DW на русском",
+        "The Insider",
+        "Коммерсантъ",
+        "Медуза",
+        "Новая газета Европа"
+      ]
+    },
+    "2eb82d368927dab77685": {
+      "status": "published",
+      "headline": "Над Удмуртией сбили несколько беспилотников, пострадавших нет",
+      "published_at": "2026-10-29T07:53:17.362960+00:00",
+      "sources": [
+        "Интерфакс",
+        "РИА Новости"
+      ]
     }
   },
   "budget": {
     "day": "2026-10-29",
-    "n": 12
+    "n": 19
   },
   "stats": {},
   "last_run": {
-    "at": "2026-10-29T06:46:01.405900+00:00",
+    "at": "2026-10-29T07:53:17.363019+00:00",
     "stats": {
-      "materials_received": 260,
-      "clusters": 246,
-      "rejected": 2,
+      "materials_received": 287,
+      "clusters": 266,
       "published": 2,
-      "age_seconds_total": 2798,
-      "llm_requests_local_counter": 12,
-      "duration_seconds": 330.7
+      "age_seconds_total": 2578,
+      "rejected": 2,
+      "llm_requests_local_counter": 19,
+      "duration_seconds": 334.85
     }
   },
   "daily_stats": {
@@ -265,13 +416,13 @@
       "duration_seconds": 25.65
     },
     "2026-10-29": {
-      "materials_received": 260,
-      "clusters": 246,
-      "rejected": 2,
+      "materials_received": 287,
+      "clusters": 266,
       "published": 2,
-      "age_seconds_total": 2798,
-      "llm_requests_local_counter": 12,
-      "duration_seconds": 330.7
+      "age_seconds_total": 2578,
+      "rejected": 2,
+      "llm_requests_local_counter": 19,
+      "duration_seconds": 334.85
     }
   }
 }
