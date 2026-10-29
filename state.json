@@ -75,7 +75,14 @@
     "24daaa672f4a6fe98711",
     "ae03af00dd951d5ecab9",
     "79a35ed0c3e8c08fa371",
-    "f432d49d4d1eff00569d"
+    "f432d49d4d1eff00569d",
+    "71f1c310ba23717e1d34",
+    "f179a8e7c5c624a145cf",
+    "16f4b990bca0d09053d8",
+    "c7d69c7e0cabdba4ed61",
+    "9bc61024c725fd8d0978",
+    "e3b1a7581efac52bb636",
+    "4f2c1607bb49dd69d1fa"
   ],
   "titles": [
     [
@@ -691,6 +698,41 @@
       "status": "published",
       "updated_at": "2026-10-29T09:40:36.758509+00:00",
       "reason": ""
+    },
+    "71f1c310ba23717e1d34": {
+      "status": "duplicate",
+      "updated_at": "2026-10-29T17:31:15.272579+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "f179a8e7c5c624a145cf": {
+      "status": "duplicate",
+      "updated_at": "2026-10-29T17:31:15.272579+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "16f4b990bca0d09053d8": {
+      "status": "duplicate",
+      "updated_at": "2026-10-29T17:31:15.272579+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "c7d69c7e0cabdba4ed61": {
+      "status": "duplicate",
+      "updated_at": "2026-10-29T17:31:15.272579+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "9bc61024c725fd8d0978": {
+      "status": "duplicate",
+      "updated_at": "2026-10-29T17:31:15.272579+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "e3b1a7581efac52bb636": {
+      "status": "duplicate",
+      "updated_at": "2026-10-29T17:31:15.272579+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "4f2c1607bb49dd69d1fa": {
+      "status": "duplicate",
+      "updated_at": "2026-10-29T17:31:15.272579+00:00",
+      "reason": "похож на ранее опубликованную новость"
     }
   },
   "events": {
@@ -808,13 +850,14 @@
   },
   "stats": {},
   "last_run": {
-    "at": "2026-10-29T17:01:19.714729+00:00",
+    "at": "2026-10-29T17:31:15.272744+00:00",
     "stats": {
       "materials_received": 335,
-      "clusters": 322,
+      "clusters": 316,
+      "duplicates": 1,
       "llm_errors": 1,
       "llm_requests_local_counter": 45,
-      "duration_seconds": 18.36
+      "duration_seconds": 19.24
     }
   },
   "daily_stats": {
@@ -827,10 +870,11 @@
     },
     "2026-10-29": {
       "materials_received": 335,
-      "clusters": 322,
+      "clusters": 316,
+      "duplicates": 1,
       "llm_errors": 1,
       "llm_requests_local_counter": 45,
-      "duration_seconds": 18.36
+      "duration_seconds": 19.24
     }
   }
 }
