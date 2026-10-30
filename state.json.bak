@@ -115,7 +115,10 @@
     "1e829da8e34ed3951ed7",
     "d82fc13a14c81f984c19",
     "e9652590d00f994c13b0",
-    "dbe1375d7118ebd46cb0"
+    "dbe1375d7118ebd46cb0",
+    "daab9a24090eaa465f1f",
+    "46e57a0cd99d4c50c7ce",
+    "1c9666c1fa49c52f48b8"
   ],
   "titles": [
     [
@@ -1180,6 +1183,21 @@
       "status": "duplicate",
       "updated_at": "2026-10-30T04:31:04.892445+00:00",
       "reason": "похож на ранее опубликованную новость"
+    },
+    "daab9a24090eaa465f1f": {
+      "status": "duplicate",
+      "updated_at": "2026-10-30T05:01:12.300654+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "46e57a0cd99d4c50c7ce": {
+      "status": "duplicate",
+      "updated_at": "2026-10-30T05:01:12.300654+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "1c9666c1fa49c52f48b8": {
+      "status": "duplicate",
+      "updated_at": "2026-10-30T05:01:12.300654+00:00",
+      "reason": "похож на ранее опубликованную новость"
     }
   },
   "events": {
@@ -1368,18 +1386,18 @@
   },
   "budget": {
     "day": "2026-10-30",
-    "n": 40
+    "n": 45
   },
   "stats": {},
   "last_run": {
-    "at": "2026-10-30T04:31:15.420443+00:00",
+    "at": "2026-10-30T05:01:22.647352+00:00",
     "stats": {
-      "materials_received": 195,
-      "clusters": 176,
+      "materials_received": 202,
+      "clusters": 180,
       "duplicates": 1,
       "llm_errors": 1,
-      "llm_requests_local_counter": 40,
-      "duration_seconds": 28.4
+      "llm_requests_local_counter": 45,
+      "duration_seconds": 26.61
     }
   },
   "daily_stats": {
@@ -1398,12 +1416,12 @@
       "duration_seconds": 16.13
     },
     "2026-10-30": {
-      "materials_received": 195,
-      "clusters": 176,
+      "materials_received": 202,
+      "clusters": 180,
       "duplicates": 1,
       "llm_errors": 1,
-      "llm_requests_local_counter": 40,
-      "duration_seconds": 28.4
+      "llm_requests_local_counter": 45,
+      "duration_seconds": 26.61
     }
   }
 }
