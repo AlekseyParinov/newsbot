@@ -107,7 +107,12 @@
     "76c64ee8ae9b620a4ea4",
     "4ecc155da25fbd5ed8f3",
     "b187c3ec071697ec159b",
-    "79fb1bf3c371e9035d40"
+    "79fb1bf3c371e9035d40",
+    "f71f226756f82f627f1c",
+    "3d5fd2c161c49e3be17b",
+    "f65a9fd850e3350a3826",
+    "9aee7ace3126a3162882",
+    "1e829da8e34ed3951ed7"
   ],
   "titles": [
     [
@@ -384,6 +389,25 @@
       "почти",
       "растет",
       "цена"
+    ],
+    [
+      "аэропорт",
+      "введен",
+      "ввели",
+      "временн",
+      "ограничени",
+      "ульяновск"
+    ],
+    [
+      "25",
+      "атаку",
+      "бпла",
+      "летевших",
+      "москв",
+      "отразил",
+      "пво",
+      "сбили",
+      "силы"
     ]
   ],
   "heads": [
@@ -671,6 +695,36 @@
       "стоимость",
       "фьючерс",
       "цены"
+    ],
+    [
+      "аэропорт",
+      "безопасност",
+      "введен",
+      "временн",
+      "данным",
+      "для",
+      "обеспечени",
+      "ограничени",
+      "полет",
+      "тасс",
+      "ульяновск"
+    ],
+    [
+      "25",
+      "атаку",
+      "бпла",
+      "летевших",
+      "летящих",
+      "москв",
+      "новост",
+      "отразил",
+      "пво",
+      "риа",
+      "сбили",
+      "силы",
+      "сообщают",
+      "тасс",
+      "что"
     ]
   ],
   "items": {
@@ -1083,6 +1137,31 @@
       "status": "published",
       "updated_at": "2026-10-30T02:10:03.531723+00:00",
       "reason": ""
+    },
+    "f71f226756f82f627f1c": {
+      "status": "published",
+      "updated_at": "2026-10-30T02:35:13.707288+00:00",
+      "reason": ""
+    },
+    "3d5fd2c161c49e3be17b": {
+      "status": "published",
+      "updated_at": "2026-10-30T02:35:13.707288+00:00",
+      "reason": ""
+    },
+    "f65a9fd850e3350a3826": {
+      "status": "published",
+      "updated_at": "2026-10-30T02:35:13.707288+00:00",
+      "reason": ""
+    },
+    "9aee7ace3126a3162882": {
+      "status": "published",
+      "updated_at": "2026-10-30T02:36:50.930242+00:00",
+      "reason": ""
+    },
+    "1e829da8e34ed3951ed7": {
+      "status": "published",
+      "updated_at": "2026-10-30T02:36:50.930242+00:00",
+      "reason": ""
     }
   },
   "events": {
@@ -1248,23 +1327,41 @@
         "Коммерсантъ",
         "ТАСС"
       ]
+    },
+    "8246dfc39e8103d4e4fb": {
+      "status": "published",
+      "headline": "Временные ограничения введены в аэропорту Ульяновска",
+      "published_at": "2026-10-30T02:35:13.707327+00:00",
+      "sources": [
+        "Интерфакс",
+        "РИА Новости",
+        "ТАСС"
+      ]
+    },
+    "829a04190bc389717bdc": {
+      "status": "published",
+      "headline": "Силы ПВО отразили атаку 25 БПЛА, летевших на Москву",
+      "published_at": "2026-10-30T02:36:50.930272+00:00",
+      "sources": [
+        "РИА Новости",
+        "ТАСС"
+      ]
     }
   },
   "budget": {
     "day": "2026-10-30",
-    "n": 20
+    "n": 25
   },
   "stats": {},
   "last_run": {
-    "at": "2026-10-30T02:10:03.531818+00:00",
+    "at": "2026-10-30T02:36:50.930328+00:00",
     "stats": {
-      "materials_received": 170,
+      "materials_received": 172,
       "clusters": 161,
-      "rejected": 2,
       "published": 2,
-      "age_seconds_total": 2955,
-      "llm_requests_local_counter": 20,
-      "duration_seconds": 547.3
+      "age_seconds_total": 2318,
+      "llm_requests_local_counter": 25,
+      "duration_seconds": 364.77
     }
   },
   "daily_stats": {
@@ -1283,13 +1380,12 @@
       "duration_seconds": 16.13
     },
     "2026-10-30": {
-      "materials_received": 170,
+      "materials_received": 172,
       "clusters": 161,
-      "rejected": 2,
       "published": 2,
-      "age_seconds_total": 2955,
-      "llm_requests_local_counter": 20,
-      "duration_seconds": 547.3
+      "age_seconds_total": 2318,
+      "llm_requests_local_counter": 25,
+      "duration_seconds": 364.77
     }
   }
 }
