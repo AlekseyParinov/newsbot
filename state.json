@@ -142,7 +142,20 @@
     "3199acfdee9510863086",
     "c1f695275999ceb4e87e",
     "2c33c82c18ebe62fb278",
-    "416cfeec4079d79a1d20"
+    "416cfeec4079d79a1d20",
+    "e6d50a395fc51c3c7d29",
+    "c21983e279b659f85721",
+    "ca38b14b0516abda621a",
+    "96303f084cbc2d9e2950",
+    "eb4c4c0ec827ac3993eb",
+    "6e10c212caee1090db63",
+    "4426e3cbf7e9e2ec8cb7",
+    "2327d659d43f0bfd5f73",
+    "95a65fac21bc6f74bb43",
+    "bdbc9ae065d3a0e5269f",
+    "38b58cf9c37b4bced667",
+    "dc431eedc1f295512d95",
+    "fa2d484b280a26c4d1da"
   ],
   "titles": [
     [
@@ -1491,6 +1504,76 @@
       "status": "published",
       "updated_at": "2026-10-31T00:35:32.886066+00:00",
       "reason": ""
+    },
+    "e6d50a395fc51c3c7d29": {
+      "status": "rejected",
+      "updated_at": "2026-10-31T01:01:45.392838+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "c21983e279b659f85721": {
+      "status": "rejected",
+      "updated_at": "2026-10-31T01:01:45.392838+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "ca38b14b0516abda621a": {
+      "status": "rejected",
+      "updated_at": "2026-10-31T01:01:45.392838+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "96303f084cbc2d9e2950": {
+      "status": "rejected",
+      "updated_at": "2026-10-31T01:02:03.961775+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "eb4c4c0ec827ac3993eb": {
+      "status": "rejected",
+      "updated_at": "2026-10-31T01:02:27.501696+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "6e10c212caee1090db63": {
+      "status": "rejected",
+      "updated_at": "2026-10-31T01:02:51.699815+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "4426e3cbf7e9e2ec8cb7": {
+      "status": "rejected",
+      "updated_at": "2026-10-31T01:07:59.793353+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "2327d659d43f0bfd5f73": {
+      "status": "rejected",
+      "updated_at": "2026-10-31T01:08:41.652414+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "95a65fac21bc6f74bb43": {
+      "status": "rejected",
+      "updated_at": "2026-10-31T01:09:04.072914+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "bdbc9ae065d3a0e5269f": {
+      "status": "rejected",
+      "updated_at": "2026-10-31T01:09:28.895056+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "38b58cf9c37b4bced667": {
+      "status": "rejected",
+      "updated_at": "2026-10-31T01:09:53.245583+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "dc431eedc1f295512d95": {
+      "status": "rejected",
+      "updated_at": "2026-10-31T01:10:14.488012+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "fa2d484b280a26c4d1da": {
+      "status": "rejected",
+      "updated_at": "2026-10-31T01:10:31.517749+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "c5849838373267c1c995": {
+      "status": "pending",
+      "updated_at": "2026-10-31T01:15:58.114329+00:00",
+      "reason": "ошибка Telegram: ReadTimeout"
     }
   },
   "events": {
@@ -1716,19 +1799,18 @@
   },
   "budget": {
     "day": "2026-10-31",
-    "n": 15
+    "n": 29
   },
   "stats": {},
   "last_run": {
-    "at": "2026-10-31T00:35:32.886150+00:00",
+    "at": "2026-10-31T01:15:58.114382+00:00",
     "stats": {
-      "materials_received": 185,
-      "clusters": 169,
-      "rejected": 2,
-      "published": 2,
-      "age_seconds_total": 9513,
-      "llm_requests_local_counter": 15,
-      "duration_seconds": 288.15
+      "materials_received": 175,
+      "clusters": 160,
+      "rejected": 11,
+      "telegram_errors": 1,
+      "llm_requests_local_counter": 29,
+      "duration_seconds": 905.88
     }
   },
   "daily_stats": {
@@ -1754,13 +1836,12 @@
       "duration_seconds": 15.12
     },
     "2026-10-31": {
-      "materials_received": 185,
-      "clusters": 169,
-      "rejected": 2,
-      "published": 2,
-      "age_seconds_total": 9513,
-      "llm_requests_local_counter": 15,
-      "duration_seconds": 288.15
+      "materials_received": 175,
+      "clusters": 160,
+      "rejected": 11,
+      "telegram_errors": 1,
+      "llm_requests_local_counter": 29,
+      "duration_seconds": 905.88
     }
   }
 }
