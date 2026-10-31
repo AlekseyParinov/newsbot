@@ -2018,13 +2018,13 @@
   },
   "stats": {},
   "last_run": {
-    "at": "2026-10-31T13:01:13.312409+00:00",
+    "at": "2026-10-31T13:31:04.349385+00:00",
     "stats": {
       "materials_received": 273,
       "clusters": 248,
       "llm_errors": 1,
       "llm_requests_local_counter": 45,
-      "duration_seconds": 19.99
+      "duration_seconds": 18.32
     }
   },
   "daily_stats": {
@@ -2054,7 +2054,7 @@
       "clusters": 248,
       "llm_errors": 1,
       "llm_requests_local_counter": 45,
-      "duration_seconds": 19.99
+      "duration_seconds": 18.32
     }
   }
 }
