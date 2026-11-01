@@ -230,7 +230,10 @@
     "e3611e54add44f4cb680",
     "867cb27e737857081de1",
     "ecc4e5abde112f755b61",
-    "3e00e4d5551ec5517f17"
+    "3e00e4d5551ec5517f17",
+    "b72877bd6f6b75e2c00c",
+    "1a46a17f5ed1193e39bd",
+    "c20ebddb0e09c957e109"
   ],
   "titles": [
     [
@@ -690,6 +693,19 @@
       "суд",
       "судитьс",
       "сша"
+    ],
+    [
+      "аэропорт",
+      "ввели",
+      "калуг",
+      "нижнего",
+      "новгород",
+      "ограничени",
+      "приостановил",
+      "работ",
+      "самар",
+      "ульяновск",
+      "чебоксар"
     ]
   ],
   "heads": [
@@ -1377,6 +1393,28 @@
       "суде",
       "судитьс",
       "сша"
+    ],
+    [
+      "агентств",
+      "аэропорт",
+      "введен",
+      "воздушных",
+      "временн",
+      "выпуск",
+      "интерфакс",
+      "нижнего",
+      "новгород",
+      "новост",
+      "ограничени",
+      "прием",
+      "риа",
+      "росавиаци",
+      "самар",
+      "сообщени",
+      "судов",
+      "тасс",
+      "ульяновск",
+      "через"
     ]
   ],
   "items": {
@@ -2404,6 +2442,21 @@
       "status": "published",
       "updated_at": "2026-11-01T02:37:44.160973+00:00",
       "reason": ""
+    },
+    "b72877bd6f6b75e2c00c": {
+      "status": "published",
+      "updated_at": "2026-11-01T03:03:27.594269+00:00",
+      "reason": ""
+    },
+    "1a46a17f5ed1193e39bd": {
+      "status": "published",
+      "updated_at": "2026-11-01T03:03:27.594269+00:00",
+      "reason": ""
+    },
+    "c20ebddb0e09c957e109": {
+      "status": "rejected",
+      "updated_at": "2026-11-01T03:04:58.610328+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
     }
   },
   "events": {
@@ -2729,23 +2782,34 @@
       "sources": [
         "РБК"
       ]
+    },
+    "ebb7a808bb4c24dafafe": {
+      "status": "published",
+      "headline": "Введены временные ограничения на прием и выпуск воздушных судов в аэропортах Нижнего Новгорода, Самары и Ульяновска",
+      "published_at": "2026-11-01T03:03:27.594312+00:00",
+      "sources": [
+        "Интерфакс",
+        "РИА Новости",
+        "ТАСС"
+      ]
     }
   },
   "budget": {
     "day": "2026-11-01",
-    "n": 41
+    "n": 45
   },
   "stats": {},
   "last_run": {
-    "at": "2026-11-01T02:37:44.161079+00:00",
+    "at": "2026-11-01T03:04:58.610565+00:00",
     "stats": {
-      "materials_received": 148,
-      "clusters": 137,
-      "published": 2,
-      "age_seconds_total": 3124,
+      "materials_received": 151,
+      "clusters": 135,
+      "published": 1,
+      "age_seconds_total": 3027,
       "rejected": 1,
-      "llm_requests_local_counter": 41,
-      "duration_seconds": 421.04
+      "llm_errors": 1,
+      "llm_requests_local_counter": 45,
+      "duration_seconds": 242.34
     }
   },
   "daily_stats": {
@@ -2778,13 +2842,14 @@
       "duration_seconds": 14.8
     },
     "2026-11-01": {
-      "materials_received": 148,
-      "clusters": 137,
-      "published": 2,
-      "age_seconds_total": 3124,
+      "materials_received": 151,
+      "clusters": 135,
+      "published": 1,
+      "age_seconds_total": 3027,
       "rejected": 1,
-      "llm_requests_local_counter": 41,
-      "duration_seconds": 421.04
+      "llm_errors": 1,
+      "llm_requests_local_counter": 45,
+      "duration_seconds": 242.34
     }
   }
 }
