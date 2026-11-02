@@ -302,9 +302,8 @@
     "645f1b557f7ddf581c74",
     "fc83d66c004eb502dd3c",
     "4cf5d2f36018b03be94f",
-    "600cfd597984f83984a1",
-    "9984013429c0e5193f17",
-    "66d299b01de5828dab42"
+    "f4d5b0959b4aae659a6c",
+    "600cfd597984f83984a1"
   ],
   "titles": [
     [
@@ -3111,20 +3110,15 @@
       "updated_at": "2026-11-02T02:11:15.909216+00:00",
       "reason": ""
     },
-    "600cfd597984f83984a1": {
+    "f4d5b0959b4aae659a6c": {
       "status": "duplicate",
-      "updated_at": "2026-11-02T02:31:20.819053+00:00",
+      "updated_at": "2026-11-02T02:41:03.227378+00:00",
       "reason": "похож на ранее опубликованную новость"
     },
-    "9984013429c0e5193f17": {
-      "status": "rejected",
-      "updated_at": "2026-11-02T02:39:07.873157+00:00",
-      "reason": "пропуск редактором или отказ фактчека"
-    },
-    "66d299b01de5828dab42": {
-      "status": "rejected",
-      "updated_at": "2026-11-02T02:39:36.830289+00:00",
-      "reason": "пропуск редактором или отказ фактчека"
+    "600cfd597984f83984a1": {
+      "status": "duplicate",
+      "updated_at": "2026-11-02T02:41:03.227378+00:00",
+      "reason": "похож на ранее опубликованную новость"
     }
   },
   "events": {
@@ -3537,19 +3531,18 @@
   },
   "budget": {
     "day": "2026-11-02",
-    "n": 45
+    "n": 41
   },
   "stats": {},
   "last_run": {
-    "at": "2026-11-02T02:40:36.477291+00:00",
+    "at": "2026-11-02T02:41:14.099506+00:00",
     "stats": {
-      "materials_received": 134,
-      "clusters": 121,
+      "materials_received": 176,
+      "clusters": 159,
       "duplicates": 1,
-      "rejected": 2,
       "llm_errors": 1,
-      "llm_requests_local_counter": 45,
-      "duration_seconds": 589.57
+      "llm_requests_local_counter": 41,
+      "duration_seconds": 25.91
     }
   },
   "daily_stats": {
@@ -3589,13 +3582,12 @@
       "duration_seconds": 16.49
     },
     "2026-11-02": {
-      "materials_received": 134,
-      "clusters": 121,
+      "materials_received": 176,
+      "clusters": 159,
       "duplicates": 1,
-      "rejected": 2,
       "llm_errors": 1,
-      "llm_requests_local_counter": 45,
-      "duration_seconds": 589.57
+      "llm_requests_local_counter": 41,
+      "duration_seconds": 25.91
     }
   }
 }
