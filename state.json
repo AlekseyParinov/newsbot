@@ -351,7 +351,12 @@
     "6350d55f910579e394d0",
     "eff0ca74ebc12b9937e9",
     "82ec0d96e0682aa12124",
-    "c5c79a318490fb38f12e"
+    "c5c79a318490fb38f12e",
+    "dea7d9cd147ed421ed83",
+    "207579591ca01f973a02",
+    "abaa86a35c27ff0a74a9",
+    "1806015d8fd8061b25be",
+    "41dd0f0055a8119a3be0"
   ],
   "titles": [
     [
@@ -968,6 +973,25 @@
       "начинает",
       "что",
       "эвакуаци"
+    ],
+    [
+      "абу",
+      "анонсировал",
+      "безопасност",
+      "гаранти",
+      "даби",
+      "для",
+      "киева",
+      "назвал",
+      "оаэ",
+      "ожидан",
+      "переговор",
+      "рассказал",
+      "росси",
+      "сша",
+      "темы",
+      "уиткофф",
+      "украин"
     ]
   ],
   "heads": [
@@ -1978,6 +2002,33 @@
       "что",
       "эвакуаци",
       "эксперт"
+    ],
+    [
+      "абу",
+      "безопасност",
+      "вопрос",
+      "гарант",
+      "гуманитарн",
+      "гуманитарных",
+      "даби",
+      "дальнейш",
+      "его",
+      "конфликт",
+      "назвал",
+      "обеспечен",
+      "обсуждают",
+      "переговор",
+      "после",
+      "росси",
+      "слов",
+      "стив",
+      "сторон",
+      "сша",
+      "темы",
+      "уиткофф",
+      "украин",
+      "урегулировани",
+      "шаги"
     ]
   ],
   "items": {
@@ -3610,6 +3661,36 @@
       "status": "published",
       "updated_at": "2026-11-03T01:40:56.701305+00:00",
       "reason": ""
+    },
+    "dea7d9cd147ed421ed83": {
+      "status": "published",
+      "updated_at": "2026-11-03T02:02:52.327569+00:00",
+      "reason": ""
+    },
+    "207579591ca01f973a02": {
+      "status": "duplicate",
+      "updated_at": "2026-11-03T02:02:52.327791+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "abaa86a35c27ff0a74a9": {
+      "status": "duplicate",
+      "updated_at": "2026-11-03T02:02:52.327791+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "1806015d8fd8061b25be": {
+      "status": "duplicate",
+      "updated_at": "2026-11-03T02:02:52.327791+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "41dd0f0055a8119a3be0": {
+      "status": "duplicate",
+      "updated_at": "2026-11-03T02:02:52.327791+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "f1ec1785fa169eeeb3c6": {
+      "status": "pending",
+      "updated_at": "2026-11-03T02:07:40.795319+00:00",
+      "reason": "ошибка Telegram: ConnectionError"
     }
   },
   "events": {
@@ -4072,24 +4153,34 @@
       "sources": [
         "ТАСС"
       ]
+    },
+    "eb42f14755871a11567f": {
+      "status": "published",
+      "headline": "Стив Уиткофф назвал темы переговоров США, России и Украины в Абу-Даби о гарантиях безопасности и гуманитарных вопросах.",
+      "published_at": "2026-11-03T02:02:52.327624+00:00",
+      "sources": [
+        "Лента.ру",
+        "РБК",
+        "РИА Новости"
+      ]
     }
   },
   "budget": {
     "day": "2026-11-03",
-    "n": 27
+    "n": 32
   },
   "stats": {},
   "last_run": {
-    "at": "2026-11-03T01:40:56.701405+00:00",
+    "at": "2026-11-03T02:07:40.795395+00:00",
     "stats": {
-      "materials_received": 173,
-      "clusters": 149,
-      "published": 2,
-      "age_seconds_total": 3898,
-      "rejected": 2,
-      "duplicates": 2,
-      "llm_requests_local_counter": 27,
-      "duration_seconds": 606.75
+      "materials_received": 171,
+      "clusters": 144,
+      "published": 1,
+      "age_seconds_total": 1486,
+      "duplicates": 1,
+      "telegram_errors": 1,
+      "llm_requests_local_counter": 32,
+      "duration_seconds": 402.8
     }
   },
   "daily_stats": {
@@ -4136,14 +4227,14 @@
       "duration_seconds": 15.73
     },
     "2026-11-03": {
-      "materials_received": 173,
-      "clusters": 149,
-      "published": 2,
-      "age_seconds_total": 3898,
-      "rejected": 2,
-      "duplicates": 2,
-      "llm_requests_local_counter": 27,
-      "duration_seconds": 606.75
+      "materials_received": 171,
+      "clusters": 144,
+      "published": 1,
+      "age_seconds_total": 1486,
+      "duplicates": 1,
+      "telegram_errors": 1,
+      "llm_requests_local_counter": 32,
+      "duration_seconds": 402.8
     }
   }
 }
