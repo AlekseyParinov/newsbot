@@ -417,7 +417,26 @@
     "abcbde96464f9c806e75",
     "724f9faffaac48f49bea",
     "ba35ce21b68eca34007b",
-    "16535d5f9bc673203a59"
+    "16535d5f9bc673203a59",
+    "a25c8a70ab89bf40f4ab",
+    "10fae358b7077f97cc7a",
+    "416f88a91360aae5d034",
+    "a0f766b42fec7f5dd98d",
+    "588fde12d47bca2a8693",
+    "e8571a1c1c0f11f21914",
+    "2d22013ba21e7cae159b",
+    "a57a54cffab0630ea50c",
+    "440e4c0c08b03ee7afa0",
+    "bf331c3c824c983eb3b4",
+    "024c9f0f934399f58096",
+    "e7ce33495ccfae8b796d",
+    "8bba48c2b6b4a3c0c748",
+    "7662cb11cd901a550956",
+    "63a4466ae4ea97faa80c",
+    "3e8edd27d5f39c9d1d6a",
+    "0faceafb63284c56363c",
+    "93e709a63eb878f522d2",
+    "73792ba3ae28386a46a0"
   ],
   "titles": [
     [
@@ -1158,6 +1177,15 @@
       "неформальн",
       "пригласил",
       "саммит"
+    ],
+    [
+      "жалоб",
+      "закрыт",
+      "лерчек",
+      "мосгорсуд",
+      "отсутств",
+      "рассмотрит",
+      "режим"
     ]
   ],
   "heads": [
@@ -2415,6 +2443,22 @@
       "приглашени",
       "саммит",
       "стран"
+    ],
+    [
+      "адвокат",
+      "будет",
+      "жалоб",
+      "закрыт",
+      "лерчек",
+      "мосгорсуд",
+      "отсутств",
+      "представитель",
+      "представлять",
+      "рассмотрит",
+      "режим",
+      "сообщил",
+      "суда",
+      "тасс"
     ]
   ],
   "items": {
@@ -4377,6 +4421,101 @@
       "status": "published",
       "updated_at": "2026-11-04T00:49:49.882986+00:00",
       "reason": ""
+    },
+    "a25c8a70ab89bf40f4ab": {
+      "status": "rejected",
+      "updated_at": "2026-11-04T01:31:36.037100+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "10fae358b7077f97cc7a": {
+      "status": "rejected",
+      "updated_at": "2026-11-04T01:31:36.037100+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "416f88a91360aae5d034": {
+      "status": "rejected",
+      "updated_at": "2026-11-04T01:32:23.294968+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "a0f766b42fec7f5dd98d": {
+      "status": "rejected",
+      "updated_at": "2026-11-04T01:32:23.294968+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "588fde12d47bca2a8693": {
+      "status": "rejected",
+      "updated_at": "2026-11-04T01:33:04.018164+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "e8571a1c1c0f11f21914": {
+      "status": "rejected",
+      "updated_at": "2026-11-04T01:33:04.018164+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "2d22013ba21e7cae159b": {
+      "status": "rejected",
+      "updated_at": "2026-11-04T01:33:26.979260+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "a57a54cffab0630ea50c": {
+      "status": "rejected",
+      "updated_at": "2026-11-04T01:34:03.290661+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "440e4c0c08b03ee7afa0": {
+      "status": "rejected",
+      "updated_at": "2026-11-04T01:35:11.532373+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "bf331c3c824c983eb3b4": {
+      "status": "rejected",
+      "updated_at": "2026-11-04T01:35:52.735116+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "024c9f0f934399f58096": {
+      "status": "rejected",
+      "updated_at": "2026-11-04T01:36:10.431558+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "e7ce33495ccfae8b796d": {
+      "status": "rejected",
+      "updated_at": "2026-11-04T01:36:42.092885+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "8bba48c2b6b4a3c0c748": {
+      "status": "rejected",
+      "updated_at": "2026-11-04T01:37:03.213497+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "7662cb11cd901a550956": {
+      "status": "rejected",
+      "updated_at": "2026-11-04T01:37:55.524080+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "63a4466ae4ea97faa80c": {
+      "status": "rejected",
+      "updated_at": "2026-11-04T01:38:39.354389+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "3e8edd27d5f39c9d1d6a": {
+      "status": "published",
+      "updated_at": "2026-11-04T01:42:22.221245+00:00",
+      "reason": ""
+    },
+    "0faceafb63284c56363c": {
+      "status": "rejected",
+      "updated_at": "2026-11-04T01:42:48.553454+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "93e709a63eb878f522d2": {
+      "status": "rejected",
+      "updated_at": "2026-11-04T01:43:24.731953+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "73792ba3ae28386a46a0": {
+      "status": "rejected",
+      "updated_at": "2026-11-04T01:44:04.221315+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
     }
   },
   "events": {
@@ -4929,23 +5068,32 @@
       "sources": [
         "Интерфакс"
       ]
+    },
+    "6eba5842a285e8749464": {
+      "status": "published",
+      "headline": "ТАСС: Мосгорсуд рассмотрит жалобу Лерчек в закрытом режиме и в её отсутствие.",
+      "published_at": "2026-11-04T01:42:22.221310+00:00",
+      "sources": [
+        "ТАСС"
+      ]
     }
   },
   "budget": {
     "day": "2026-11-04",
-    "n": 24
+    "n": 45
   },
   "stats": {},
   "last_run": {
-    "at": "2026-11-04T00:49:49.883087+00:00",
+    "at": "2026-11-04T01:44:11.072438+00:00",
     "stats": {
-      "materials_received": 177,
-      "clusters": 165,
-      "published": 2,
-      "age_seconds_total": 4075,
-      "rejected": 3,
-      "llm_requests_local_counter": 24,
-      "duration_seconds": 396.86
+      "materials_received": 183,
+      "clusters": 168,
+      "rejected": 15,
+      "published": 1,
+      "age_seconds_total": 2489,
+      "llm_errors": 1,
+      "llm_requests_local_counter": 45,
+      "duration_seconds": 803.22
     }
   },
   "daily_stats": {
@@ -4999,13 +5147,14 @@
       "duration_seconds": 16.07
     },
     "2026-11-04": {
-      "materials_received": 177,
-      "clusters": 165,
-      "published": 2,
-      "age_seconds_total": 4075,
-      "rejected": 3,
-      "llm_requests_local_counter": 24,
-      "duration_seconds": 396.86
+      "materials_received": 183,
+      "clusters": 168,
+      "rejected": 15,
+      "published": 1,
+      "age_seconds_total": 2489,
+      "llm_errors": 1,
+      "llm_requests_local_counter": 45,
+      "duration_seconds": 803.22
     }
   }
 }
