@@ -467,7 +467,15 @@
     "c309cf0ae96894131b8b",
     "4ac5e5399a7ffd55553c",
     "276d9576c223729cf97a",
-    "4af043539c7ec3543afc"
+    "4af043539c7ec3543afc",
+    "edc8845e29f4f314cda1",
+    "8186bfea9946eccc8997",
+    "44b678b72cb6107445ec",
+    "8b617f8b6a453750ae6a",
+    "f02f05068765ee9d7abd",
+    "c9e66d5637d0c9acb4a7",
+    "6f4d508765bef18bddde",
+    "b0aa5f74c1722e1cf7c6"
   ],
   "titles": [
     [
@@ -1268,6 +1276,16 @@
       "стремлен",
       "указал",
       "украин"
+    ],
+    [
+      "влиян",
+      "внутренн",
+      "иран",
+      "конфликт",
+      "отметил",
+      "процесс",
+      "сша",
+      "ульян"
     ]
   ],
   "heads": [
@@ -2646,6 +2664,27 @@
       "усилени",
       "черн",
       "это"
+    ],
+    [
+      "агресси",
+      "администраци",
+      "вене",
+      "выбор",
+      "ирана",
+      "международных",
+      "назвал",
+      "организац",
+      "постоянн",
+      "представитель",
+      "при",
+      "против",
+      "росси",
+      "свободным",
+      "сообщает",
+      "сша",
+      "тасс",
+      "ульян",
+      "что"
     ]
   ],
   "items": {
@@ -4858,6 +4897,51 @@
       "status": "published",
       "updated_at": "2026-11-05T00:38:10.847682+00:00",
       "reason": ""
+    },
+    "edc8845e29f4f314cda1": {
+      "status": "published",
+      "updated_at": "2026-11-05T01:05:14.021990+00:00",
+      "reason": ""
+    },
+    "8186bfea9946eccc8997": {
+      "status": "published",
+      "updated_at": "2026-11-05T01:05:14.021990+00:00",
+      "reason": ""
+    },
+    "44b678b72cb6107445ec": {
+      "status": "rejected",
+      "updated_at": "2026-11-05T01:05:41.849289+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "8b617f8b6a453750ae6a": {
+      "status": "rejected",
+      "updated_at": "2026-11-05T01:05:41.849289+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "f02f05068765ee9d7abd": {
+      "status": "rejected",
+      "updated_at": "2026-11-05T01:06:38.286093+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "c9e66d5637d0c9acb4a7": {
+      "status": "rejected",
+      "updated_at": "2026-11-05T01:06:38.286093+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "6f4d508765bef18bddde": {
+      "status": "rejected",
+      "updated_at": "2026-11-05T01:07:14.411779+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "b0aa5f74c1722e1cf7c6": {
+      "status": "rejected",
+      "updated_at": "2026-11-05T01:08:50.069581+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "04c91baec63773ea7f11": {
+      "status": "pending",
+      "updated_at": "2026-11-05T01:14:03.289951+00:00",
+      "reason": "ошибка Telegram: ReadTimeout"
     }
   },
   "events": {
@@ -5455,24 +5539,33 @@
         "Лента.ру",
         "ТАСС"
       ]
+    },
+    "26960e15a00a2d9c1353": {
+      "status": "published",
+      "headline": "Ульянов назвал агрессию против Ирана свободным выбором администрации США",
+      "published_at": "2026-11-05T01:05:14.022055+00:00",
+      "sources": [
+        "РИА Новости",
+        "ТАСС"
+      ]
     }
   },
   "budget": {
     "day": "2026-11-05",
-    "n": 15
+    "n": 24
   },
   "stats": {},
   "last_run": {
-    "at": "2026-11-05T00:38:10.847789+00:00",
+    "at": "2026-11-05T01:14:03.290002+00:00",
     "stats": {
-      "materials_received": 173,
-      "clusters": 152,
-      "duplicates": 2,
-      "rejected": 3,
-      "published": 2,
-      "age_seconds_total": 6781,
-      "llm_requests_local_counter": 15,
-      "duration_seconds": 440.49
+      "materials_received": 169,
+      "clusters": 151,
+      "published": 1,
+      "age_seconds_total": 1506,
+      "rejected": 4,
+      "telegram_errors": 1,
+      "llm_requests_local_counter": 24,
+      "duration_seconds": 787.83
     }
   },
   "daily_stats": {
@@ -5533,14 +5626,14 @@
       "duration_seconds": 16.63
     },
     "2026-11-05": {
-      "materials_received": 173,
-      "clusters": 152,
-      "duplicates": 2,
-      "rejected": 3,
-      "published": 2,
-      "age_seconds_total": 6781,
-      "llm_requests_local_counter": 15,
-      "duration_seconds": 440.49
+      "materials_received": 169,
+      "clusters": 151,
+      "published": 1,
+      "age_seconds_total": 1506,
+      "rejected": 4,
+      "telegram_errors": 1,
+      "llm_requests_local_counter": 24,
+      "duration_seconds": 787.83
     }
   }
 }
