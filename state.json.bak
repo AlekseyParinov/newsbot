@@ -490,7 +490,12 @@
     "7f04b8dbb407eb391f95",
     "7cc2784fd72eb55a5772",
     "aaf66f8e8f538dea867b",
-    "9ce855668da99ccea195"
+    "9ce855668da99ccea195",
+    "0359039aaa3f4a899cf6",
+    "a44fd6bf9545c1e9a26d",
+    "05f1af82f3b2ad7e6c90",
+    "72aca5bd87cb66a78000",
+    "a20f8f9a206471dc42fe"
   ],
   "titles": [
     [
@@ -1343,6 +1348,24 @@
       "обжаловал",
       "приговор",
       "суде"
+    ],
+    [
+      "аэропорт",
+      "возобновил",
+      "выпуск",
+      "пензы",
+      "прием",
+      "работ",
+      "самолет"
+    ],
+    [
+      "архангельск",
+      "загорелс",
+      "локомотив",
+      "област",
+      "путях",
+      "регион",
+      "российск"
     ]
   ],
   "heads": [
@@ -2840,6 +2863,43 @@
       "суд",
       "уклонен",
       "уплат"
+    ],
+    [
+      "аэропорт",
+      "воздушных",
+      "возобновил",
+      "выпуск",
+      "ограничени",
+      "пензы",
+      "прием",
+      "росавиаци",
+      "самолет",
+      "сняты",
+      "сообщает",
+      "судов"
+    ],
+    [
+      "архангельск",
+      "данным",
+      "детал",
+      "загорани",
+      "загорелс",
+      "лента",
+      "локомотив",
+      "мчс",
+      "нет",
+      "област",
+      "пострадавших",
+      "произошло",
+      "путях",
+      "регион",
+      "росси",
+      "российск",
+      "событ",
+      "сообщает",
+      "сообщил",
+      "тасс",
+      "уточняетс"
     ]
   ],
   "items": {
@@ -5167,6 +5227,31 @@
       "status": "published",
       "updated_at": "2026-11-05T02:07:53.090936+00:00",
       "reason": ""
+    },
+    "0359039aaa3f4a899cf6": {
+      "status": "duplicate",
+      "updated_at": "2026-11-05T02:31:07.445830+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "a44fd6bf9545c1e9a26d": {
+      "status": "published",
+      "updated_at": "2026-11-05T02:34:05.080716+00:00",
+      "reason": ""
+    },
+    "05f1af82f3b2ad7e6c90": {
+      "status": "published",
+      "updated_at": "2026-11-05T02:34:05.080716+00:00",
+      "reason": ""
+    },
+    "72aca5bd87cb66a78000": {
+      "status": "published",
+      "updated_at": "2026-11-05T02:35:58.813339+00:00",
+      "reason": ""
+    },
+    "a20f8f9a206471dc42fe": {
+      "status": "published",
+      "updated_at": "2026-11-05T02:35:58.813339+00:00",
+      "reason": ""
     }
   },
   "events": {
@@ -5808,24 +5893,41 @@
       "sources": [
         "РБК"
       ]
+    },
+    "f952912c626ef3006c56": {
+      "status": "published",
+      "headline": "Аэропорт Пензы возобновил прием и выпуск самолетов.",
+      "published_at": "2026-11-05T02:34:05.080778+00:00",
+      "sources": [
+        "Интерфакс",
+        "ТАСС"
+      ]
+    },
+    "42952d0de759029fc24a": {
+      "status": "published",
+      "headline": "На путях в России загорелся локомотив.",
+      "published_at": "2026-11-05T02:35:58.813411+00:00",
+      "sources": [
+        "Лента.ру",
+        "ТАСС"
+      ]
     }
   },
   "budget": {
     "day": "2026-11-05",
-    "n": 39
+    "n": 44
   },
   "stats": {},
   "last_run": {
-    "at": "2026-11-05T02:07:53.091041+00:00",
+    "at": "2026-11-05T02:35:58.813470+00:00",
     "stats": {
-      "materials_received": 155,
-      "clusters": 140,
-      "published": 2,
-      "age_seconds_total": 3151,
+      "materials_received": 157,
+      "clusters": 144,
       "duplicates": 1,
-      "rejected": 4,
-      "llm_requests_local_counter": 39,
-      "duration_seconds": 414.83
+      "published": 2,
+      "age_seconds_total": 1960,
+      "llm_requests_local_counter": 44,
+      "duration_seconds": 310.34
     }
   },
   "daily_stats": {
@@ -5886,14 +5988,13 @@
       "duration_seconds": 16.63
     },
     "2026-11-05": {
-      "materials_received": 155,
-      "clusters": 140,
-      "published": 2,
-      "age_seconds_total": 3151,
+      "materials_received": 157,
+      "clusters": 144,
       "duplicates": 1,
-      "rejected": 4,
-      "llm_requests_local_counter": 39,
-      "duration_seconds": 414.83
+      "published": 2,
+      "age_seconds_total": 1960,
+      "llm_requests_local_counter": 44,
+      "duration_seconds": 310.34
     }
   }
 }
