@@ -603,7 +603,15 @@
     "313f23eb51d1ecd7a1d5",
     "f02f2b0805c0ae507100",
     "8866afb7d260d894871c",
-    "317f88882432355d4808"
+    "317f88882432355d4808",
+    "b752fa0352df5c891442",
+    "3a548e311aff3edd1ecf",
+    "d39c957d02c6156c2c50",
+    "8adb76381f14fbcae982",
+    "2f9db07ebd050eb92edd",
+    "81fa7994856bc0f15e38",
+    "1a17c196bc31aa832dcc",
+    "f915929c181c70354d66"
   ],
   "titles": [
     [
@@ -1695,6 +1703,17 @@
       "тыс",
       "тысяч",
       "финлянди"
+    ],
+    [
+      "евросоюз",
+      "кредит",
+      "новый",
+      "ответил",
+      "отказ",
+      "поддержать",
+      "украин",
+      "фицо",
+      "шантаж"
     ]
   ],
   "heads": [
@@ -3639,6 +3658,33 @@
       "тысяч",
       "финлянди",
       "что"
+    ],
+    [
+      "главы",
+      "давлен",
+      "евросоюз",
+      "заявил",
+      "киева",
+      "кредит",
+      "министр",
+      "назвал",
+      "нежелани",
+      "некотор",
+      "новый",
+      "отказ",
+      "поддержать",
+      "правительств",
+      "премьер",
+      "роберт",
+      "словаки",
+      "средств",
+      "угрожают",
+      "украин",
+      "урезать",
+      "финансирован",
+      "фицо",
+      "что",
+      "шантаж"
     ]
   ],
   "items": {
@@ -6531,6 +6577,46 @@
       "status": "published",
       "updated_at": "2026-11-07T02:37:07.853817+00:00",
       "reason": ""
+    },
+    "b752fa0352df5c891442": {
+      "status": "duplicate",
+      "updated_at": "2026-11-07T02:57:13.152537+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "3a548e311aff3edd1ecf": {
+      "status": "duplicate",
+      "updated_at": "2026-11-07T02:57:13.152537+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "d39c957d02c6156c2c50": {
+      "status": "duplicate",
+      "updated_at": "2026-11-07T02:57:13.152537+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "8adb76381f14fbcae982": {
+      "status": "duplicate",
+      "updated_at": "2026-11-07T02:57:13.152714+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "2f9db07ebd050eb92edd": {
+      "status": "duplicate",
+      "updated_at": "2026-11-07T02:57:13.152714+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "81fa7994856bc0f15e38": {
+      "status": "duplicate",
+      "updated_at": "2026-11-07T02:57:13.152714+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "1a17c196bc31aa832dcc": {
+      "status": "published",
+      "updated_at": "2026-11-07T02:58:53.042459+00:00",
+      "reason": ""
+    },
+    "f915929c181c70354d66": {
+      "status": "published",
+      "updated_at": "2026-11-07T02:58:53.042459+00:00",
+      "reason": ""
     }
   },
   "events": {
@@ -7353,24 +7439,33 @@
         "РИА Новости",
         "ТАСС"
       ]
+    },
+    "86d59f9c6153c15f0bbd": {
+      "status": "published",
+      "headline": "Фицо назвал давление Евросоюза шантажом из-за отказа поддержать новый кредит Украины",
+      "published_at": "2026-11-07T02:58:53.042502+00:00",
+      "sources": [
+        "Лента.ру",
+        "РБК"
+      ]
     }
   },
   "budget": {
     "day": "2026-11-07",
-    "n": 39
+    "n": 45
   },
   "stats": {},
   "last_run": {
-    "at": "2026-11-07T02:37:07.853933+00:00",
+    "at": "2026-11-07T03:00:03.315043+00:00",
     "stats": {
-      "materials_received": 145,
+      "materials_received": 146,
       "clusters": 128,
-      "published": 2,
-      "age_seconds_total": 2875,
-      "rejected": 1,
-      "duplicates": 1,
-      "llm_requests_local_counter": 39,
-      "duration_seconds": 376.9
+      "duplicates": 2,
+      "published": 1,
+      "age_seconds_total": 839,
+      "llm_errors": 1,
+      "llm_requests_local_counter": 45,
+      "duration_seconds": 188.6
     }
   },
   "daily_stats": {
@@ -7445,14 +7540,14 @@
       "duration_seconds": 19.5
     },
     "2026-11-07": {
-      "materials_received": 145,
+      "materials_received": 146,
       "clusters": 128,
-      "published": 2,
-      "age_seconds_total": 2875,
-      "rejected": 1,
-      "duplicates": 1,
-      "llm_requests_local_counter": 39,
-      "duration_seconds": 376.9
+      "duplicates": 2,
+      "published": 1,
+      "age_seconds_total": 839,
+      "llm_errors": 1,
+      "llm_requests_local_counter": 45,
+      "duration_seconds": 188.6
     }
   }
 }
