@@ -611,7 +611,25 @@
     "2f9db07ebd050eb92edd",
     "81fa7994856bc0f15e38",
     "1a17c196bc31aa832dcc",
-    "f915929c181c70354d66"
+    "f915929c181c70354d66",
+    "07a6224a60f7cadb2d3c",
+    "7e78714e861151e8e75e",
+    "fc5676a140aee9d1f3ab",
+    "31cb4d90f70cc6715106",
+    "e442454c36b8e3fb39c1",
+    "a8113c81226fd690e9fd",
+    "57e0eb79393148bf9aa3",
+    "e2492953089b7aafe9c6",
+    "c5e7d466348f58a71a92",
+    "aea7cf659360df703981",
+    "cfe3ee3919ba084989ff",
+    "ea4a62ec6ac3c0526cea",
+    "7abf8b8abf06700546ef",
+    "239628620502f7e6c25d",
+    "2a3f5e0e9a6376053720",
+    "cacdbee1965db1fc7bf0",
+    "25277bc47c1d0896bf57",
+    "d0588afa25f32d453803"
   ],
   "titles": [
     [
@@ -1714,6 +1732,16 @@
       "украин",
       "фицо",
       "шантаж"
+    ],
+    [
+      "краков",
+      "пострадал",
+      "при",
+      "ранен",
+      "результат",
+      "россиянк",
+      "стрельб",
+      "теракт"
     ]
   ],
   "heads": [
@@ -3685,6 +3713,20 @@
       "фицо",
       "что",
       "шантаж"
+    ],
+    [
+      "агентств",
+      "верси",
+      "гражданк",
+      "краков",
+      "отмечают",
+      "пострадал",
+      "расходятс",
+      "российск",
+      "сми",
+      "сообщил",
+      "стрельб",
+      "теракт"
     ]
   ],
   "items": {
@@ -6617,6 +6659,106 @@
       "status": "published",
       "updated_at": "2026-11-07T02:58:53.042459+00:00",
       "reason": ""
+    },
+    "07a6224a60f7cadb2d3c": {
+      "status": "rejected",
+      "updated_at": "2026-11-08T00:02:21.452629+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "7e78714e861151e8e75e": {
+      "status": "rejected",
+      "updated_at": "2026-11-08T00:02:21.452629+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "fc5676a140aee9d1f3ab": {
+      "status": "rejected",
+      "updated_at": "2026-11-08T00:02:21.452629+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "31cb4d90f70cc6715106": {
+      "status": "rejected",
+      "updated_at": "2026-11-08T00:02:21.452629+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "e442454c36b8e3fb39c1": {
+      "status": "published",
+      "updated_at": "2026-11-08T00:07:59.692376+00:00",
+      "reason": ""
+    },
+    "a8113c81226fd690e9fd": {
+      "status": "published",
+      "updated_at": "2026-11-08T00:07:59.692376+00:00",
+      "reason": ""
+    },
+    "57e0eb79393148bf9aa3": {
+      "status": "published",
+      "updated_at": "2026-11-08T00:07:59.692376+00:00",
+      "reason": ""
+    },
+    "e2492953089b7aafe9c6": {
+      "status": "published",
+      "updated_at": "2026-11-08T00:07:59.692376+00:00",
+      "reason": ""
+    },
+    "c5e7d466348f58a71a92": {
+      "status": "published",
+      "updated_at": "2026-11-08T00:07:59.692376+00:00",
+      "reason": ""
+    },
+    "aea7cf659360df703981": {
+      "status": "rejected",
+      "updated_at": "2026-11-08T00:08:39.779782+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "cfe3ee3919ba084989ff": {
+      "status": "rejected",
+      "updated_at": "2026-11-08T00:08:39.779782+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "ea4a62ec6ac3c0526cea": {
+      "status": "rejected",
+      "updated_at": "2026-11-08T00:08:39.779782+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "7abf8b8abf06700546ef": {
+      "status": "rejected",
+      "updated_at": "2026-11-08T00:09:01.101100+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "239628620502f7e6c25d": {
+      "status": "rejected",
+      "updated_at": "2026-11-08T00:09:01.101100+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "2a3f5e0e9a6376053720": {
+      "status": "rejected",
+      "updated_at": "2026-11-08T00:09:31.647428+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "cacdbee1965db1fc7bf0": {
+      "status": "rejected",
+      "updated_at": "2026-11-08T00:09:31.647428+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "25277bc47c1d0896bf57": {
+      "status": "rejected",
+      "updated_at": "2026-11-08T00:10:56.217099+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "d0588afa25f32d453803": {
+      "status": "rejected",
+      "updated_at": "2026-11-08T00:10:56.217099+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "c13ab90342ad8ca9265f": {
+      "status": "pending",
+      "updated_at": "2026-11-08T00:13:17.664078+00:00",
+      "reason": "ошибка Telegram: ConnectionError"
+    },
+    "85771edb8a6de1e2792b": {
+      "status": "pending",
+      "updated_at": "2026-11-08T00:13:17.664078+00:00",
+      "reason": "ошибка Telegram: ConnectionError"
     }
   },
   "events": {
@@ -7448,21 +7590,36 @@
         "Лента.ру",
         "РБК"
       ]
+    },
+    "35b590accb2b3016bf9b": {
+      "status": "published",
+      "headline": "Российская гражданка пострадала в Кракове, сообщили СМИ.",
+      "published_at": "2026-11-08T00:07:59.692459+00:00",
+      "sources": [
+        "Интерфакс",
+        "Лента.ру",
+        "РБК",
+        "РИА Новости",
+        "ТАСС"
+      ]
     }
   },
   "budget": {
-    "day": "2026-11-07",
-    "n": 45
+    "day": "2026-11-08",
+    "n": 11
   },
   "stats": {},
   "last_run": {
-    "at": "2026-11-07T23:31:03.038900+00:00",
+    "at": "2026-11-08T00:13:17.664179+00:00",
     "stats": {
-      "materials_received": 186,
+      "materials_received": 178,
       "clusters": 154,
-      "llm_errors": 1,
-      "llm_requests_local_counter": 45,
-      "duration_seconds": 18.35
+      "rejected": 5,
+      "published": 1,
+      "age_seconds_total": 5819,
+      "telegram_errors": 1,
+      "llm_requests_local_counter": 11,
+      "duration_seconds": 737.76
     }
   },
   "daily_stats": {
@@ -7542,6 +7699,16 @@
       "llm_errors": 1,
       "llm_requests_local_counter": 45,
       "duration_seconds": 18.35
+    },
+    "2026-11-08": {
+      "materials_received": 178,
+      "clusters": 154,
+      "rejected": 5,
+      "published": 1,
+      "age_seconds_total": 5819,
+      "telegram_errors": 1,
+      "llm_requests_local_counter": 11,
+      "duration_seconds": 737.76
     }
   }
 }
