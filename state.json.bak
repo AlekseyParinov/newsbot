@@ -8020,13 +8020,13 @@
   },
   "stats": {},
   "last_run": {
-    "at": "2026-11-08T14:01:16.090849+00:00",
+    "at": "2026-11-08T14:31:09.059749+00:00",
     "stats": {
       "materials_received": 252,
       "clusters": 226,
       "llm_errors": 1,
       "llm_requests_local_counter": 45,
-      "duration_seconds": 18.69
+      "duration_seconds": 21.95
     }
   },
   "daily_stats": {
@@ -8112,7 +8112,7 @@
       "clusters": 226,
       "llm_errors": 1,
       "llm_requests_local_counter": 45,
-      "duration_seconds": 18.69
+      "duration_seconds": 21.95
     }
   }
 }
