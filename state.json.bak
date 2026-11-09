@@ -755,7 +755,13 @@
     "e2e9e3e0932a963dfba1",
     "aa27d96fbcca631590cb",
     "dff0969288eff684340a",
-    "c22bee939871dbd2bb6e"
+    "c22bee939871dbd2bb6e",
+    "9cc10cdc0f27424e2e3a",
+    "b88eb88d7af77ca71434",
+    "94d6eb316ef3d23fca29",
+    "353d51a9fb9cce6770ac",
+    "9e1a5ce6f043860a4718",
+    "e173314f5b26c37996bd"
   ],
   "titles": [
     [
@@ -8002,6 +8008,36 @@
       "status": "duplicate",
       "updated_at": "2026-11-09T05:31:09.368871+00:00",
       "reason": "похож на ранее опубликованную новость"
+    },
+    "9cc10cdc0f27424e2e3a": {
+      "status": "duplicate",
+      "updated_at": "2026-11-09T06:01:15.626234+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "b88eb88d7af77ca71434": {
+      "status": "duplicate",
+      "updated_at": "2026-11-09T06:01:15.626234+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "94d6eb316ef3d23fca29": {
+      "status": "duplicate",
+      "updated_at": "2026-11-09T06:01:15.626358+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "353d51a9fb9cce6770ac": {
+      "status": "duplicate",
+      "updated_at": "2026-11-09T06:01:15.626358+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "9e1a5ce6f043860a4718": {
+      "status": "duplicate",
+      "updated_at": "2026-11-09T06:01:15.626358+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "e173314f5b26c37996bd": {
+      "status": "duplicate",
+      "updated_at": "2026-11-09T06:01:15.626358+00:00",
+      "reason": "похож на ранее опубликованную новость"
     }
   },
   "events": {
@@ -8983,14 +9019,14 @@
   },
   "stats": {},
   "last_run": {
-    "at": "2026-11-09T05:31:09.369317+00:00",
+    "at": "2026-11-09T06:01:15.626621+00:00",
     "stats": {
-      "materials_received": 203,
-      "clusters": 189,
-      "duplicates": 1,
+      "materials_received": 213,
+      "clusters": 192,
+      "duplicates": 2,
       "llm_errors": 1,
       "llm_requests_local_counter": 45,
-      "duration_seconds": 18.71
+      "duration_seconds": 17.6
     }
   },
   "daily_stats": {
@@ -9079,12 +9115,12 @@
       "duration_seconds": 15.81
     },
     "2026-11-09": {
-      "materials_received": 203,
-      "clusters": 189,
-      "duplicates": 1,
+      "materials_received": 213,
+      "clusters": 192,
+      "duplicates": 2,
       "llm_errors": 1,
       "llm_requests_local_counter": 45,
-      "duration_seconds": 18.71
+      "duration_seconds": 17.6
     }
   }
 }
