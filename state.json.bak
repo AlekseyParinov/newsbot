@@ -894,7 +894,16 @@
     "b98e1441145710ec641c",
     "84519082bbf72828e687",
     "74cc07ff899100731544",
-    "1270b352e568ddcac848"
+    "1270b352e568ddcac848",
+    "be8e189b6138a067e602",
+    "cc172e9d08e8ef890399",
+    "74f3afde5ee9c3b65e6d",
+    "3b88460df9c945f4c0b6",
+    "66eb23c602e3f7124fdb",
+    "839879d0d03daed0fa58",
+    "a880dd59c732746e43d8",
+    "f3e9e8b6055e39a31d6b",
+    "55b96fd16957667cb25e"
   ],
   "titles": [
     [
@@ -9343,6 +9352,51 @@
       "status": "duplicate",
       "updated_at": "2026-11-11T09:01:16.717730+00:00",
       "reason": "похож на ранее опубликованную новость"
+    },
+    "be8e189b6138a067e602": {
+      "status": "duplicate",
+      "updated_at": "2026-11-11T11:01:22.682939+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "cc172e9d08e8ef890399": {
+      "status": "duplicate",
+      "updated_at": "2026-11-11T11:01:22.682939+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "74f3afde5ee9c3b65e6d": {
+      "status": "duplicate",
+      "updated_at": "2026-11-11T11:01:22.682939+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "3b88460df9c945f4c0b6": {
+      "status": "duplicate",
+      "updated_at": "2026-11-11T11:01:22.682939+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "66eb23c602e3f7124fdb": {
+      "status": "duplicate",
+      "updated_at": "2026-11-11T11:01:22.682939+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "839879d0d03daed0fa58": {
+      "status": "duplicate",
+      "updated_at": "2026-11-11T11:01:22.682939+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "a880dd59c732746e43d8": {
+      "status": "duplicate",
+      "updated_at": "2026-11-11T11:01:22.682939+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "f3e9e8b6055e39a31d6b": {
+      "status": "duplicate",
+      "updated_at": "2026-11-11T11:01:22.682939+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "55b96fd16957667cb25e": {
+      "status": "duplicate",
+      "updated_at": "2026-11-11T11:01:22.682939+00:00",
+      "reason": "похож на ранее опубликованную новость"
     }
   },
   "events": {
@@ -10450,13 +10504,14 @@
   },
   "stats": {},
   "last_run": {
-    "at": "2026-11-11T10:31:05.276855+00:00",
+    "at": "2026-11-11T11:01:22.683434+00:00",
     "stats": {
       "materials_received": 317,
-      "clusters": 289,
+      "clusters": 290,
+      "duplicates": 1,
       "llm_errors": 1,
       "llm_requests_local_counter": 45,
-      "duration_seconds": 17.39
+      "duration_seconds": 20.44
     }
   },
   "daily_stats": {
@@ -10561,10 +10616,11 @@
     },
     "2026-11-11": {
       "materials_received": 317,
-      "clusters": 289,
+      "clusters": 290,
+      "duplicates": 1,
       "llm_errors": 1,
       "llm_requests_local_counter": 45,
-      "duration_seconds": 17.39
+      "duration_seconds": 20.44
     }
   }
 }
