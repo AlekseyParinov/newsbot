@@ -11769,13 +11769,13 @@
   },
   "stats": {},
   "last_run": {
-    "at": "2026-11-13T20:31:00.582151+00:00",
+    "at": "2026-11-13T21:01:15.110054+00:00",
     "stats": {
-      "materials_received": 263,
-      "clusters": 247,
+      "materials_received": 252,
+      "clusters": 234,
       "llm_errors": 1,
       "llm_requests_local_counter": 45,
-      "duration_seconds": 14.79
+      "duration_seconds": 20.74
     }
   },
   "daily_stats": {
@@ -11893,11 +11893,11 @@
       "duration_seconds": 20.03
     },
     "2026-11-13": {
-      "materials_received": 263,
-      "clusters": 247,
+      "materials_received": 252,
+      "clusters": 234,
       "llm_errors": 1,
       "llm_requests_local_counter": 45,
-      "duration_seconds": 14.79
+      "duration_seconds": 20.74
     }
   }
 }
