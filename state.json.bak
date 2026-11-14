@@ -12372,20 +12372,17 @@
   },
   "budget": {
     "day": "2026-11-14",
-    "n": 39
+    "n": 45
   },
   "stats": {},
   "last_run": {
-    "at": "2026-11-14T02:37:27.387326+00:00",
+    "at": "2026-11-14T03:03:17.583931+00:00",
     "stats": {
-      "materials_received": 154,
-      "clusters": 145,
-      "rejected": 4,
-      "published": 1,
-      "age_seconds_total": 2541,
+      "materials_received": 142,
+      "clusters": 135,
       "llm_errors": 1,
-      "llm_requests_local_counter": 39,
-      "duration_seconds": 392.58
+      "llm_requests_local_counter": 45,
+      "duration_seconds": 129.37
     }
   },
   "daily_stats": {
@@ -12510,14 +12507,11 @@
       "duration_seconds": 15.0
     },
     "2026-11-14": {
-      "materials_received": 154,
-      "clusters": 145,
-      "rejected": 4,
-      "published": 1,
-      "age_seconds_total": 2541,
+      "materials_received": 142,
+      "clusters": 135,
       "llm_errors": 1,
-      "llm_requests_local_counter": 39,
-      "duration_seconds": 392.58
+      "llm_requests_local_counter": 45,
+      "duration_seconds": 129.37
     }
   }
 }
