@@ -1141,7 +1141,11 @@
     "9d4bbd97c8a0774a5eb2",
     "df4d3fa5e00b9f257060",
     "eb0463564918c9c8e78c",
-    "a78a07876464317395b7"
+    "a78a07876464317395b7",
+    "10ab7a93c1553f7542c4",
+    "c9510ede06f6758c3391",
+    "8268974f8e6ec99b19d0",
+    "f05b29d8d56fe3ac68f7"
   ],
   "titles": [
     [
@@ -11921,6 +11925,26 @@
       "status": "duplicate",
       "updated_at": "2026-11-15T05:31:03.473160+00:00",
       "reason": "похож на ранее опубликованную новость"
+    },
+    "10ab7a93c1553f7542c4": {
+      "status": "duplicate",
+      "updated_at": "2026-11-15T06:02:11.569058+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "c9510ede06f6758c3391": {
+      "status": "duplicate",
+      "updated_at": "2026-11-15T06:02:11.569058+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "8268974f8e6ec99b19d0": {
+      "status": "duplicate",
+      "updated_at": "2026-11-15T06:02:11.569213+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "f05b29d8d56fe3ac68f7": {
+      "status": "duplicate",
+      "updated_at": "2026-11-15T06:02:11.569213+00:00",
+      "reason": "похож на ранее опубликованную новость"
     }
   },
   "events": {
@@ -13307,14 +13331,14 @@
   },
   "stats": {},
   "last_run": {
-    "at": "2026-11-15T05:31:03.473629+00:00",
+    "at": "2026-11-15T06:02:11.569576+00:00",
     "stats": {
-      "materials_received": 160,
-      "clusters": 143,
-      "duplicates": 1,
+      "materials_received": 109,
+      "clusters": 102,
+      "duplicates": 2,
       "llm_errors": 1,
       "llm_requests_local_counter": 45,
-      "duration_seconds": 16.66
+      "duration_seconds": 69.59
     }
   },
   "daily_stats": {
@@ -13447,12 +13471,12 @@
       "duration_seconds": 13.08
     },
     "2026-11-15": {
-      "materials_received": 160,
-      "clusters": 143,
-      "duplicates": 1,
+      "materials_received": 109,
+      "clusters": 102,
+      "duplicates": 2,
       "llm_errors": 1,
       "llm_requests_local_counter": 45,
-      "duration_seconds": 16.66
+      "duration_seconds": 69.59
     }
   }
 }
