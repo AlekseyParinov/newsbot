@@ -1122,7 +1122,17 @@
     "d6f7a514b0a826c71e7d",
     "9b0950ce6bfb8eb8f0a8",
     "4251879f0d642528eb5d",
-    "b869b6c53661f4c7e8d3"
+    "b869b6c53661f4c7e8d3",
+    "de502fb9da62740db5ad",
+    "00e0d1cc27336e62a660",
+    "1f56650c8590f5488eeb",
+    "121d73e8ebf1401c301c",
+    "5ea2ee68e05afc00e484",
+    "80e948ed6d677068d76b",
+    "f411ee630527f76836ce",
+    "29de9c31783fa93d8cb9",
+    "cf3c4894711a82a8e78c",
+    "0d8cd64c031de0898766"
   ],
   "titles": [
     [
@@ -11807,6 +11817,56 @@
       "status": "published",
       "updated_at": "2026-11-15T02:06:29.486138+00:00",
       "reason": ""
+    },
+    "de502fb9da62740db5ad": {
+      "status": "duplicate",
+      "updated_at": "2026-11-15T02:31:06.609247+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "00e0d1cc27336e62a660": {
+      "status": "duplicate",
+      "updated_at": "2026-11-15T02:31:06.609247+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "1f56650c8590f5488eeb": {
+      "status": "duplicate",
+      "updated_at": "2026-11-15T02:31:06.609247+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "121d73e8ebf1401c301c": {
+      "status": "duplicate",
+      "updated_at": "2026-11-15T02:31:06.609247+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "5ea2ee68e05afc00e484": {
+      "status": "rejected",
+      "updated_at": "2026-11-15T02:31:47.273072+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "80e948ed6d677068d76b": {
+      "status": "rejected",
+      "updated_at": "2026-11-15T02:31:47.273072+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "f411ee630527f76836ce": {
+      "status": "rejected",
+      "updated_at": "2026-11-15T02:32:08.609199+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "29de9c31783fa93d8cb9": {
+      "status": "rejected",
+      "updated_at": "2026-11-15T02:32:08.609199+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "cf3c4894711a82a8e78c": {
+      "status": "rejected",
+      "updated_at": "2026-11-15T02:32:40.432607+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "0d8cd64c031de0898766": {
+      "status": "rejected",
+      "updated_at": "2026-11-15T02:33:14.674015+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
     }
   },
   "events": {
@@ -13189,20 +13249,19 @@
   },
   "budget": {
     "day": "2026-11-15",
-    "n": 40
+    "n": 45
   },
   "stats": {},
   "last_run": {
-    "at": "2026-11-15T02:06:29.486275+00:00",
+    "at": "2026-11-15T02:33:14.674596+00:00",
     "stats": {
-      "materials_received": 129,
-      "clusters": 116,
-      "rejected": 6,
+      "materials_received": 145,
+      "clusters": 126,
       "duplicates": 1,
-      "published": 2,
-      "age_seconds_total": 1479,
-      "llm_requests_local_counter": 40,
-      "duration_seconds": 323.07
+      "rejected": 4,
+      "llm_errors": 1,
+      "llm_requests_local_counter": 45,
+      "duration_seconds": 144.82
     }
   },
   "daily_stats": {
@@ -13335,14 +13394,13 @@
       "duration_seconds": 13.08
     },
     "2026-11-15": {
-      "materials_received": 129,
-      "clusters": 116,
-      "rejected": 6,
+      "materials_received": 145,
+      "clusters": 126,
       "duplicates": 1,
-      "published": 2,
-      "age_seconds_total": 1479,
-      "llm_requests_local_counter": 40,
-      "duration_seconds": 323.07
+      "rejected": 4,
+      "llm_errors": 1,
+      "llm_requests_local_counter": 45,
+      "duration_seconds": 144.82
     }
   }
 }
