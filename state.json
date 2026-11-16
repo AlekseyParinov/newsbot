@@ -1222,7 +1222,16 @@
     "35c62be5ef3fb402f911",
     "072fb1bbd5a1682a7f73",
     "5f98e4fa63a25dc126d1",
-    "9212637a75ea4e27436b"
+    "9212637a75ea4e27436b",
+    "b0342e12186c6913e809",
+    "5337cacec9466c3e9b90",
+    "a2470ab4eacedf2e29dc",
+    "00674c2f8b6a724b7543",
+    "b6f8e127452057cf33d6",
+    "e4e8e980223cce8b38ee",
+    "1ba111ff826147b24f00",
+    "e102dd878bcafcf8d4e6",
+    "42a8335cb43cc0f9d084"
   ],
   "titles": [
     [
@@ -3103,6 +3112,19 @@
       "сахалин",
       "села",
       "часть"
+    ],
+    [
+      "19",
+      "встреч",
+      "китай",
+      "китая",
+      "мид",
+      "ноябр",
+      "подтвердил",
+      "путин",
+      "путиным",
+      "трамп",
+      "цзиньпин"
     ]
   ],
   "heads": [
@@ -6690,6 +6712,35 @@
       "сахалин",
       "села",
       "часть"
+    ],
+    [
+      "19",
+      "аpec",
+      "встреч",
+      "данным",
+      "дел",
+      "заявлен",
+      "иностранных",
+      "информаци",
+      "источник",
+      "китайск",
+      "китая",
+      "мид",
+      "министерств",
+      "ноябр",
+      "официальн",
+      "подтвердил",
+      "полях",
+      "президент",
+      "пройдет",
+      "путин",
+      "росси",
+      "саммит",
+      "сша",
+      "трамп",
+      "трехсторонн",
+      "цзиньпин",
+      "шэньчжэн"
     ]
   ],
   "items": {
@@ -12677,6 +12728,51 @@
       "status": "published",
       "updated_at": "2026-11-16T01:39:47.055764+00:00",
       "reason": ""
+    },
+    "b0342e12186c6913e809": {
+      "status": "published",
+      "updated_at": "2026-11-16T02:02:30.435214+00:00",
+      "reason": ""
+    },
+    "5337cacec9466c3e9b90": {
+      "status": "published",
+      "updated_at": "2026-11-16T02:02:30.435214+00:00",
+      "reason": ""
+    },
+    "a2470ab4eacedf2e29dc": {
+      "status": "published",
+      "updated_at": "2026-11-16T02:02:30.435214+00:00",
+      "reason": ""
+    },
+    "00674c2f8b6a724b7543": {
+      "status": "published",
+      "updated_at": "2026-11-16T02:02:30.435214+00:00",
+      "reason": ""
+    },
+    "b6f8e127452057cf33d6": {
+      "status": "duplicate",
+      "updated_at": "2026-11-16T02:02:30.435482+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "e4e8e980223cce8b38ee": {
+      "status": "duplicate",
+      "updated_at": "2026-11-16T02:02:30.435482+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "1ba111ff826147b24f00": {
+      "status": "duplicate",
+      "updated_at": "2026-11-16T02:02:30.435754+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "e102dd878bcafcf8d4e6": {
+      "status": "duplicate",
+      "updated_at": "2026-11-16T02:02:30.435837+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "42a8335cb43cc0f9d084": {
+      "status": "duplicate",
+      "updated_at": "2026-11-16T02:02:30.435837+00:00",
+      "reason": "похож на ранее опубликованную новость"
     }
   },
   "events": {
@@ -14124,24 +14220,35 @@
       "sources": [
         "ТАСС"
       ]
+    },
+    "b2f82b8b48a8ffae44b3": {
+      "status": "published",
+      "headline": "МИД Китая подтвердил встречу Путина, Трампа и Си Цзиньпина 19 ноября",
+      "published_at": "2026-11-16T02:02:30.435319+00:00",
+      "sources": [
+        "Лента.ру",
+        "РБК",
+        "РИА Новости",
+        "ТАСС"
+      ]
     }
   },
   "budget": {
     "day": "2026-11-16",
-    "n": 42
+    "n": 45
   },
   "stats": {},
   "last_run": {
-    "at": "2026-11-16T01:39:47.055918+00:00",
+    "at": "2026-11-16T02:02:30.436188+00:00",
     "stats": {
-      "materials_received": 192,
-      "clusters": 173,
-      "rejected": 10,
-      "duplicates": 1,
-      "published": 2,
-      "age_seconds_total": 4350,
-      "llm_requests_local_counter": 42,
-      "duration_seconds": 537.71
+      "materials_received": 185,
+      "clusters": 166,
+      "published": 1,
+      "age_seconds_total": 548,
+      "duplicates": 3,
+      "llm_errors": 1,
+      "llm_requests_local_counter": 45,
+      "duration_seconds": 92.14
     }
   },
   "daily_stats": {
@@ -14281,14 +14388,14 @@
       "duration_seconds": 18.88
     },
     "2026-11-16": {
-      "materials_received": 192,
-      "clusters": 173,
-      "rejected": 10,
-      "duplicates": 1,
-      "published": 2,
-      "age_seconds_total": 4350,
-      "llm_requests_local_counter": 42,
-      "duration_seconds": 537.71
+      "materials_received": 185,
+      "clusters": 166,
+      "published": 1,
+      "age_seconds_total": 548,
+      "duplicates": 3,
+      "llm_errors": 1,
+      "llm_requests_local_counter": 45,
+      "duration_seconds": 92.14
     }
   }
 }
