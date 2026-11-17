@@ -1309,7 +1309,16 @@
     "be8abb34b546dc3295de",
     "a566817ba5fce5356990",
     "074f57c6b5def390545a",
-    "eb8e0ba3c18b4936f214"
+    "eb8e0ba3c18b4936f214",
+    "4d2b6390e58d03e87b4f",
+    "81f8785456cd5230d58a",
+    "444341e6ab32ec516b80",
+    "6d507520b6c0f4b39fe5",
+    "65be5bae7a06a127b85e",
+    "3e9675cf283a344d4e1c",
+    "b87291640fa29abaf073",
+    "e77b93ca0a287125c9bd",
+    "d4ca7aac21b691f09df7"
   ],
   "titles": [
     [
@@ -3290,6 +3299,15 @@
       "неэнергетическ",
       "составил",
       "экспорт"
+    ],
+    [
+      "возможну",
+      "воспален",
+      "затяжных",
+      "назвал",
+      "онколог",
+      "причин",
+      "токарев"
     ]
   ],
   "heads": [
@@ -7093,6 +7111,28 @@
       "форум",
       "что",
       "экспорт"
+    ],
+    [
+      "быть",
+      "внештатн",
+      "возможну",
+      "воспален",
+      "главн",
+      "затяжных",
+      "края",
+      "минздрав",
+      "может",
+      "назвал",
+      "онколог",
+      "опухолев",
+      "приморск",
+      "причин",
+      "процесс",
+      "сообщил",
+      "специалист",
+      "тасс",
+      "токарев",
+      "что"
     ]
   ],
   "items": {
@@ -13515,6 +13555,51 @@
       "status": "published",
       "updated_at": "2026-11-17T01:38:28.923508+00:00",
       "reason": ""
+    },
+    "4d2b6390e58d03e87b4f": {
+      "status": "duplicate",
+      "updated_at": "2026-11-17T02:01:12.436593+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "81f8785456cd5230d58a": {
+      "status": "published",
+      "updated_at": "2026-11-17T02:02:19.035277+00:00",
+      "reason": ""
+    },
+    "444341e6ab32ec516b80": {
+      "status": "published",
+      "updated_at": "2026-11-17T02:02:19.035277+00:00",
+      "reason": ""
+    },
+    "6d507520b6c0f4b39fe5": {
+      "status": "rejected",
+      "updated_at": "2026-11-17T02:02:36.755617+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "65be5bae7a06a127b85e": {
+      "status": "rejected",
+      "updated_at": "2026-11-17T02:02:50.372507+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "3e9675cf283a344d4e1c": {
+      "status": "rejected",
+      "updated_at": "2026-11-17T02:03:30.926720+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "b87291640fa29abaf073": {
+      "status": "rejected",
+      "updated_at": "2026-11-17T02:03:45.291783+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "e77b93ca0a287125c9bd": {
+      "status": "rejected",
+      "updated_at": "2026-11-17T02:04:01.029836+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "d4ca7aac21b691f09df7": {
+      "status": "rejected",
+      "updated_at": "2026-11-17T02:04:19.548237+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
     }
   },
   "events": {
@@ -15047,24 +15132,34 @@
       "sources": [
         "Коммерсантъ"
       ]
+    },
+    "c43f002be85df6d46178": {
+      "status": "published",
+      "headline": "По ТАСС онколог Токарева назвала возможную причину затяжных воспалений",
+      "published_at": "2026-11-17T02:02:19.035370+00:00",
+      "sources": [
+        "Лента.ру",
+        "ТАСС"
+      ]
     }
   },
   "budget": {
     "day": "2026-11-17",
-    "n": 36
+    "n": 45
   },
   "stats": {},
   "last_run": {
-    "at": "2026-11-17T01:38:28.923656+00:00",
+    "at": "2026-11-17T02:04:19.548733+00:00",
     "stats": {
-      "materials_received": 177,
-      "clusters": 162,
-      "published": 2,
-      "age_seconds_total": 8358,
-      "duplicates": 2,
-      "rejected": 10,
-      "llm_requests_local_counter": 36,
-      "duration_seconds": 460.73
+      "materials_received": 173,
+      "clusters": 159,
+      "duplicates": 1,
+      "published": 1,
+      "age_seconds_total": 504,
+      "rejected": 6,
+      "llm_errors": 1,
+      "llm_requests_local_counter": 45,
+      "duration_seconds": 201.65
     }
   },
   "daily_stats": {
@@ -15211,14 +15306,15 @@
       "duration_seconds": 13.17
     },
     "2026-11-17": {
-      "materials_received": 177,
-      "clusters": 162,
-      "published": 2,
-      "age_seconds_total": 8358,
-      "duplicates": 2,
-      "rejected": 10,
-      "llm_requests_local_counter": 36,
-      "duration_seconds": 460.73
+      "materials_received": 173,
+      "clusters": 159,
+      "duplicates": 1,
+      "published": 1,
+      "age_seconds_total": 504,
+      "rejected": 6,
+      "llm_errors": 1,
+      "llm_requests_local_counter": 45,
+      "duration_seconds": 201.65
     }
   }
 }
