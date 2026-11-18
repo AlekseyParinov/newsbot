@@ -1346,7 +1346,15 @@
     "09dde7f168af3f50e764",
     "f21a9a9dbe6e9147714b",
     "64fdb38a2d05719f316d",
-    "69530ba361677d59c14e"
+    "69530ba361677d59c14e",
+    "c18d1d8494e141f741bb",
+    "cb9e96d1b9a1505922a1",
+    "54fbe1232daff10daeca",
+    "df75002312bcfb6185a9",
+    "fe8eac5f51931a2a8dbf",
+    "7c0558db9c46a287b84e",
+    "1c6b7f5878263221ab2f",
+    "0bcce52a50bc07e2629c"
   ],
   "titles": [
     [
@@ -3374,6 +3382,21 @@
       "путиным",
       "сообщил",
       "что"
+    ],
+    [
+      "берег",
+      "землетрясени",
+      "камчатк",
+      "произошл",
+      "три"
+    ],
+    [
+      "h200",
+      "nvidia",
+      "больш",
+      "китай",
+      "поставляет",
+      "чипы"
     ]
   ],
   "heads": [
@@ -7291,6 +7314,42 @@
       "сообщил",
       "состоитс",
       "что"
+    ],
+    [
+      "tass",
+      "берег",
+      "данным",
+      "землетрясени",
+      "камчатк",
+      "объявлял",
+      "произошл",
+      "сообщил",
+      "тревог",
+      "три",
+      "цунам"
+    ],
+    [
+      "10",
+      "h200",
+      "nvidia",
+      "автомобильн",
+      "бизнес",
+      "игров",
+      "китай",
+      "кнр",
+      "колетт",
+      "кресс",
+      "объем",
+      "поставк",
+      "прекращает",
+      "приходятс",
+      "рабоч",
+      "сообщил",
+      "составляют",
+      "станци",
+      "также",
+      "чипов",
+      "эти"
     ]
   ],
   "items": {
@@ -13898,6 +13957,46 @@
       "status": "published",
       "updated_at": "2026-11-18T00:33:00.482342+00:00",
       "reason": ""
+    },
+    "c18d1d8494e141f741bb": {
+      "status": "duplicate",
+      "updated_at": "2026-11-18T01:01:11.342124+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "cb9e96d1b9a1505922a1": {
+      "status": "duplicate",
+      "updated_at": "2026-11-18T01:01:11.342124+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "54fbe1232daff10daeca": {
+      "status": "rejected",
+      "updated_at": "2026-11-18T01:01:47.328007+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "df75002312bcfb6185a9": {
+      "status": "rejected",
+      "updated_at": "2026-11-18T01:01:47.328007+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "fe8eac5f51931a2a8dbf": {
+      "status": "rejected",
+      "updated_at": "2026-11-18T01:02:20.191131+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "7c0558db9c46a287b84e": {
+      "status": "duplicate",
+      "updated_at": "2026-11-18T01:02:20.191644+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "1c6b7f5878263221ab2f": {
+      "status": "published",
+      "updated_at": "2026-11-18T01:03:13.322469+00:00",
+      "reason": ""
+    },
+    "0bcce52a50bc07e2629c": {
+      "status": "published",
+      "updated_at": "2026-11-18T01:05:53.567075+00:00",
+      "reason": ""
     }
   },
   "events": {
@@ -15473,23 +15572,40 @@
       "sources": [
         "Интерфакс"
       ]
+    },
+    "41e5962bcb0aba3e92f1": {
+      "status": "published",
+      "headline": "По данным TASS у берегов Камчатки произошли три землетрясения",
+      "published_at": "2026-11-18T01:03:13.322606+00:00",
+      "sources": [
+        "ТАСС"
+      ]
+    },
+    "476fdbcf8dc64382bd38": {
+      "status": "published",
+      "headline": "Nvidia прекращает поставки ИИ-чипов H200 в Китай",
+      "published_at": "2026-11-18T01:05:53.567189+00:00",
+      "sources": [
+        "ТАСС"
+      ]
     }
   },
   "budget": {
     "day": "2026-11-18",
-    "n": 19
+    "n": 26
   },
   "stats": {},
   "last_run": {
-    "at": "2026-11-18T00:33:00.482509+00:00",
+    "at": "2026-11-18T01:05:53.567248+00:00",
     "stats": {
-      "materials_received": 194,
-      "clusters": 186,
+      "materials_received": 186,
+      "clusters": 178,
+      "duplicates": 2,
       "rejected": 2,
       "published": 2,
-      "age_seconds_total": 3407,
-      "llm_requests_local_counter": 19,
-      "duration_seconds": 129.86
+      "age_seconds_total": 3357,
+      "llm_requests_local_counter": 26,
+      "duration_seconds": 296.9
     }
   },
   "daily_stats": {
@@ -15643,13 +15759,14 @@
       "duration_seconds": 16.27
     },
     "2026-11-18": {
-      "materials_received": 194,
-      "clusters": 186,
+      "materials_received": 186,
+      "clusters": 178,
+      "duplicates": 2,
       "rejected": 2,
       "published": 2,
-      "age_seconds_total": 3407,
-      "llm_requests_local_counter": 19,
-      "duration_seconds": 129.86
+      "age_seconds_total": 3357,
+      "llm_requests_local_counter": 26,
+      "duration_seconds": 296.9
     }
   }
 }
