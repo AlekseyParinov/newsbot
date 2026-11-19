@@ -1427,7 +1427,22 @@
     "873a8e97b0ee8f1da3cc",
     "70059cc52912b04fd5d3",
     "97c0a7242af0e10f564c",
-    "78e4ef74100fb8c4bcd0"
+    "78e4ef74100fb8c4bcd0",
+    "7d4baf7b543f44642394",
+    "383d6cb49cb52ca974e2",
+    "cf8f6bdb4e5ab16e6c82",
+    "36543827dbd729ae5078",
+    "c42c78ad1b6f3483ae6a",
+    "13bb84ca2de5f78e61f5",
+    "1568f5b497c2f4fea963",
+    "9afa6fe6fe3fe2399976",
+    "3cb6095cbe91f07c413b",
+    "5453c96be9d1c4338294",
+    "8e99faa55751bf6ab2e2",
+    "a51002d8433a09d38c61",
+    "176a72273b3d1cd625ac",
+    "18b5ac8f9bd201f243eb",
+    "57db284b88813b462b0d"
   ],
   "titles": [
     [
@@ -14901,6 +14916,81 @@
       "status": "published",
       "updated_at": "2026-11-19T02:06:06.596088+00:00",
       "reason": ""
+    },
+    "7d4baf7b543f44642394": {
+      "status": "rejected",
+      "updated_at": "2026-11-19T02:32:07.832236+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "383d6cb49cb52ca974e2": {
+      "status": "rejected",
+      "updated_at": "2026-11-19T02:32:07.832236+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "cf8f6bdb4e5ab16e6c82": {
+      "status": "rejected",
+      "updated_at": "2026-11-19T02:32:07.832236+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "36543827dbd729ae5078": {
+      "status": "duplicate",
+      "updated_at": "2026-11-19T02:32:07.832670+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "c42c78ad1b6f3483ae6a": {
+      "status": "duplicate",
+      "updated_at": "2026-11-19T02:32:07.832670+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "13bb84ca2de5f78e61f5": {
+      "status": "rejected",
+      "updated_at": "2026-11-19T02:32:27.676245+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "1568f5b497c2f4fea963": {
+      "status": "rejected",
+      "updated_at": "2026-11-19T02:32:27.676245+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "9afa6fe6fe3fe2399976": {
+      "status": "rejected",
+      "updated_at": "2026-11-19T02:33:07.787769+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "3cb6095cbe91f07c413b": {
+      "status": "rejected",
+      "updated_at": "2026-11-19T02:33:07.787769+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "5453c96be9d1c4338294": {
+      "status": "rejected",
+      "updated_at": "2026-11-19T02:33:27.415843+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "8e99faa55751bf6ab2e2": {
+      "status": "rejected",
+      "updated_at": "2026-11-19T02:33:44.312566+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "a51002d8433a09d38c61": {
+      "status": "rejected",
+      "updated_at": "2026-11-19T02:34:11.359557+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "176a72273b3d1cd625ac": {
+      "status": "rejected",
+      "updated_at": "2026-11-19T02:34:11.359557+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "18b5ac8f9bd201f243eb": {
+      "status": "rejected",
+      "updated_at": "2026-11-19T02:34:40.805068+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "57db284b88813b462b0d": {
+      "status": "rejected",
+      "updated_at": "2026-11-19T02:35:05.419153+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
     }
   },
   "events": {
@@ -16616,20 +16706,19 @@
   },
   "budget": {
     "day": "2026-11-19",
-    "n": 36
+    "n": 45
   },
   "stats": {},
   "last_run": {
-    "at": "2026-11-19T02:06:06.596248+00:00",
+    "at": "2026-11-19T02:35:05.419681+00:00",
     "stats": {
-      "materials_received": 148,
-      "clusters": 139,
-      "published": 2,
-      "age_seconds_total": 4370,
-      "rejected": 1,
+      "materials_received": 204,
+      "clusters": 189,
+      "rejected": 8,
       "duplicates": 1,
-      "llm_requests_local_counter": 36,
-      "duration_seconds": 301.62
+      "llm_errors": 1,
+      "llm_requests_local_counter": 45,
+      "duration_seconds": 257.87
     }
   },
   "daily_stats": {
@@ -16791,14 +16880,13 @@
       "duration_seconds": 19.29
     },
     "2026-11-19": {
-      "materials_received": 148,
-      "clusters": 139,
-      "published": 2,
-      "age_seconds_total": 4370,
-      "rejected": 1,
+      "materials_received": 204,
+      "clusters": 189,
+      "rejected": 8,
       "duplicates": 1,
-      "llm_requests_local_counter": 36,
-      "duration_seconds": 301.62
+      "llm_errors": 1,
+      "llm_requests_local_counter": 45,
+      "duration_seconds": 257.87
     }
   }
 }
