@@ -17351,13 +17351,13 @@
   },
   "stats": {},
   "last_run": {
-    "at": "2026-11-20T15:01:22.366854+00:00",
+    "at": "2026-11-20T15:31:16.039096+00:00",
     "stats": {
       "materials_received": 327,
       "clusters": 305,
       "llm_errors": 1,
       "llm_requests_local_counter": 45,
-      "duration_seconds": 18.45
+      "duration_seconds": 21.64
     }
   },
   "daily_stats": {
@@ -17530,7 +17530,7 @@
       "clusters": 305,
       "llm_errors": 1,
       "llm_requests_local_counter": 45,
-      "duration_seconds": 18.45
+      "duration_seconds": 21.64
     }
   }
 }
