@@ -1489,7 +1489,8 @@
     "2d074c0a9c764635d1c5",
     "1d01ce18529ccf835290",
     "7c4ba82c10bc6f7b95b3",
-    "3de71cc19f807fb63284"
+    "3de71cc19f807fb63284",
+    "dce14ee827a912438caf"
   ],
   "titles": [
     [
@@ -15545,6 +15546,11 @@
       "status": "published",
       "updated_at": "2026-11-20T02:02:47.184889+00:00",
       "reason": ""
+    },
+    "dce14ee827a912438caf": {
+      "status": "rejected",
+      "updated_at": "2026-11-20T02:32:35.281688+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
     }
   },
   "events": {
@@ -17329,20 +17335,18 @@
   },
   "budget": {
     "day": "2026-11-20",
-    "n": 41
+    "n": 45
   },
   "stats": {},
   "last_run": {
-    "at": "2026-11-20T02:02:47.185106+00:00",
+    "at": "2026-11-20T02:33:20.063447+00:00",
     "stats": {
-      "materials_received": 182,
-      "clusters": 168,
+      "materials_received": 187,
+      "clusters": 170,
       "rejected": 1,
-      "duplicates": 1,
-      "published": 2,
-      "age_seconds_total": 1217,
-      "llm_requests_local_counter": 41,
-      "duration_seconds": 108.23
+      "llm_errors": 1,
+      "llm_requests_local_counter": 45,
+      "duration_seconds": 153.27
     }
   },
   "daily_stats": {
@@ -17511,14 +17515,12 @@
       "duration_seconds": 20.33
     },
     "2026-11-20": {
-      "materials_received": 182,
-      "clusters": 168,
+      "materials_received": 187,
+      "clusters": 170,
       "rejected": 1,
-      "duplicates": 1,
-      "published": 2,
-      "age_seconds_total": 1217,
-      "llm_requests_local_counter": 41,
-      "duration_seconds": 108.23
+      "llm_errors": 1,
+      "llm_requests_local_counter": 45,
+      "duration_seconds": 153.27
     }
   }
 }
