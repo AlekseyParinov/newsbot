@@ -1571,7 +1571,10 @@
     "a39b82904fc643f59d1c",
     "aa863f8f22e7c9a7d58d",
     "f159ef6bfcebb11eac92",
-    "15007d74a25f9891c4f4"
+    "15007d74a25f9891c4f4",
+    "8f0c39c58e019c14b331",
+    "e53a42d37bb130a797e7",
+    "d909d00889aaafa48606"
   ],
   "titles": [
     [
@@ -16289,6 +16292,21 @@
       "status": "duplicate",
       "updated_at": "2026-11-21T06:01:20.262786+00:00",
       "reason": "похож на ранее опубликованную новость"
+    },
+    "8f0c39c58e019c14b331": {
+      "status": "duplicate",
+      "updated_at": "2026-11-21T11:28:18.771468+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "e53a42d37bb130a797e7": {
+      "status": "duplicate",
+      "updated_at": "2026-11-21T11:28:18.771468+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "d909d00889aaafa48606": {
+      "status": "duplicate",
+      "updated_at": "2026-11-21T11:28:18.771468+00:00",
+      "reason": "похож на ранее опубликованную новость"
     }
   },
   "events": {
@@ -18138,13 +18156,14 @@
   },
   "stats": {},
   "last_run": {
-    "at": "2026-11-21T11:02:01.318731+00:00",
+    "at": "2026-11-21T11:28:18.771997+00:00",
     "stats": {
-      "materials_received": 184,
-      "clusters": 173,
+      "materials_received": 230,
+      "clusters": 214,
+      "duplicates": 1,
       "llm_errors": 1,
       "llm_requests_local_counter": 45,
-      "duration_seconds": 52.32
+      "duration_seconds": 34.93
     }
   },
   "daily_stats": {
@@ -18320,11 +18339,12 @@
       "duration_seconds": 15.92
     },
     "2026-11-21": {
-      "materials_received": 184,
-      "clusters": 173,
+      "materials_received": 230,
+      "clusters": 214,
+      "duplicates": 1,
       "llm_errors": 1,
       "llm_requests_local_counter": 45,
-      "duration_seconds": 52.32
+      "duration_seconds": 34.93
     }
   }
 }
