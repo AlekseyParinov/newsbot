@@ -1540,7 +1540,18 @@
     "f2cb0db22620cf8d1250",
     "44d44d7e01ecb3cf0353",
     "303cf9c6f86f8f4392eb",
-    "ee67e0db7944091a074a"
+    "ee67e0db7944091a074a",
+    "75d6975bb02e4140e1ce",
+    "0a75edb8dd7ff7f592b3",
+    "eadfb01e5fd63bed1372",
+    "81b63a60645687710dcb",
+    "b1be57ed66bb8375fef7",
+    "0382aa62b22da47776bd",
+    "912df596ff28800ebd1e",
+    "fe6bb5f7d10cba0efefd",
+    "d0b75b8e6b31ad490890",
+    "6d32c98947324bb249c2",
+    "c8ea30f169b299a6f474"
   ],
   "titles": [
     [
@@ -3874,6 +3885,18 @@
       "слова",
       "трамп",
       "убийц"
+    ],
+    [
+      "европейц",
+      "макрон",
+      "москв",
+      "назвал",
+      "переговор",
+      "поездк",
+      "росси",
+      "советник",
+      "услов",
+      "франци"
     ]
   ],
   "heads": [
@@ -8482,6 +8505,33 @@
       "украин",
       "что",
       "эфире"
+    ],
+    [
+      "дворец",
+      "европейц",
+      "информаци",
+      "коммерсант",
+      "конфликт",
+      "макрон",
+      "москв",
+      "назвал",
+      "переговор",
+      "поедут",
+      "поездок",
+      "полноценн",
+      "положительным",
+      "предложен",
+      "при",
+      "процесс",
+      "роли",
+      "сигнал",
+      "советник",
+      "только",
+      "украин",
+      "урегулировани",
+      "услов",
+      "элисейск",
+      "это"
     ]
   ],
   "items": {
@@ -16064,6 +16114,61 @@
       "status": "published",
       "updated_at": "2026-11-21T01:11:49.454956+00:00",
       "reason": ""
+    },
+    "75d6975bb02e4140e1ce": {
+      "status": "published",
+      "updated_at": "2026-11-21T01:34:02.314743+00:00",
+      "reason": ""
+    },
+    "0a75edb8dd7ff7f592b3": {
+      "status": "duplicate",
+      "updated_at": "2026-11-21T01:34:02.314961+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "eadfb01e5fd63bed1372": {
+      "status": "duplicate",
+      "updated_at": "2026-11-21T01:34:02.314961+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "81b63a60645687710dcb": {
+      "status": "rejected",
+      "updated_at": "2026-11-21T01:34:16.001814+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "b1be57ed66bb8375fef7": {
+      "status": "rejected",
+      "updated_at": "2026-11-21T01:34:51.496282+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "0382aa62b22da47776bd": {
+      "status": "rejected",
+      "updated_at": "2026-11-21T01:35:27.267634+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "912df596ff28800ebd1e": {
+      "status": "rejected",
+      "updated_at": "2026-11-21T01:35:48.510394+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "fe6bb5f7d10cba0efefd": {
+      "status": "rejected",
+      "updated_at": "2026-11-21T01:36:24.454907+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "d0b75b8e6b31ad490890": {
+      "status": "duplicate",
+      "updated_at": "2026-11-21T01:36:24.455155+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "6d32c98947324bb249c2": {
+      "status": "rejected",
+      "updated_at": "2026-11-21T01:39:14.542632+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "c8ea30f169b299a6f474": {
+      "status": "rejected",
+      "updated_at": "2026-11-21T01:39:26.817819+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
     }
   },
   "events": {
@@ -17896,24 +18001,34 @@
       "sources": [
         "DW на русском"
       ]
+    },
+    "957368a2da1dbe86ad83": {
+      "status": "published",
+      "headline": "Советник Макрона назвал условие поездок европейцев в Москву по Украине",
+      "published_at": "2026-11-21T01:34:02.314847+00:00",
+      "sources": [
+        "Коммерсантъ",
+        "РИА Новости"
+      ]
     }
   },
   "budget": {
     "day": "2026-11-21",
-    "n": 34
+    "n": 45
   },
   "stats": {},
   "last_run": {
-    "at": "2026-11-21T01:11:49.455152+00:00",
+    "at": "2026-11-21T01:39:26.818413+00:00",
     "stats": {
-      "materials_received": 174,
-      "clusters": 157,
+      "materials_received": 124,
+      "clusters": 112,
+      "published": 1,
+      "age_seconds_total": 290,
       "duplicates": 2,
-      "rejected": 8,
-      "published": 2,
-      "age_seconds_total": 8050,
-      "llm_requests_local_counter": 34,
-      "duration_seconds": 651.83
+      "rejected": 7,
+      "llm_errors": 1,
+      "llm_requests_local_counter": 45,
+      "duration_seconds": 512.96
     }
   },
   "daily_stats": {
@@ -18089,14 +18204,15 @@
       "duration_seconds": 15.92
     },
     "2026-11-21": {
-      "materials_received": 174,
-      "clusters": 157,
+      "materials_received": 124,
+      "clusters": 112,
+      "published": 1,
+      "age_seconds_total": 290,
       "duplicates": 2,
-      "rejected": 8,
-      "published": 2,
-      "age_seconds_total": 8050,
-      "llm_requests_local_counter": 34,
-      "duration_seconds": 651.83
+      "rejected": 7,
+      "llm_errors": 1,
+      "llm_requests_local_counter": 45,
+      "duration_seconds": 512.96
     }
   }
 }
