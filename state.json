@@ -1718,7 +1718,13 @@
     "8c2216ed3dfd34f5780d",
     "aa654502605f049e5ddf",
     "33b5e952443360c99e85",
-    "70de49428cda7d271815"
+    "70de49428cda7d271815",
+    "85c1487846204a7bfc53",
+    "e520927e403477497387",
+    "97e91feb1f54af9298d8",
+    "d61384a56f014586728f",
+    "6c1358eb85716db3e35b",
+    "550f435421ce0516a317"
   ],
   "titles": [
     [
@@ -17869,6 +17875,36 @@
       "status": "duplicate",
       "updated_at": "2026-11-23T03:01:23.422788+00:00",
       "reason": "похож на ранее опубликованную новость"
+    },
+    "85c1487846204a7bfc53": {
+      "status": "duplicate",
+      "updated_at": "2026-11-23T03:31:10.943258+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "e520927e403477497387": {
+      "status": "duplicate",
+      "updated_at": "2026-11-23T03:31:10.943258+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "97e91feb1f54af9298d8": {
+      "status": "duplicate",
+      "updated_at": "2026-11-23T03:31:10.943258+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "d61384a56f014586728f": {
+      "status": "duplicate",
+      "updated_at": "2026-11-23T03:31:10.943258+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "6c1358eb85716db3e35b": {
+      "status": "duplicate",
+      "updated_at": "2026-11-23T03:31:10.943444+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "550f435421ce0516a317": {
+      "status": "duplicate",
+      "updated_at": "2026-11-23T03:31:10.943444+00:00",
+      "reason": "похож на ранее опубликованную новость"
     }
   },
   "events": {
@@ -19892,14 +19928,14 @@
   },
   "stats": {},
   "last_run": {
-    "at": "2026-11-23T03:01:23.423315+00:00",
+    "at": "2026-11-23T03:31:10.944152+00:00",
     "stats": {
-      "materials_received": 184,
-      "clusters": 165,
-      "duplicates": 1,
+      "materials_received": 176,
+      "clusters": 160,
+      "duplicates": 2,
       "llm_errors": 1,
       "llm_requests_local_counter": 45,
-      "duration_seconds": 23.35
+      "duration_seconds": 20.74
     }
   },
   "daily_stats": {
@@ -20089,12 +20125,12 @@
       "duration_seconds": 17.34
     },
     "2026-11-23": {
-      "materials_received": 184,
-      "clusters": 165,
-      "duplicates": 1,
+      "materials_received": 176,
+      "clusters": 160,
+      "duplicates": 2,
       "llm_errors": 1,
       "llm_requests_local_counter": 45,
-      "duration_seconds": 23.35
+      "duration_seconds": 20.74
     }
   }
 }
