@@ -1712,7 +1712,13 @@
     "96e8e4a7930e811c9df4",
     "06019827bce0fe8d8bca",
     "6ba0158fe1e479ced5ba",
-    "ca98383272e2f576e952"
+    "ca98383272e2f576e952",
+    "bd5258cd9de463f044bc",
+    "a6d15ada952a6c40241b",
+    "8c2216ed3dfd34f5780d",
+    "aa654502605f049e5ddf",
+    "33b5e952443360c99e85",
+    "70de49428cda7d271815"
   ],
   "titles": [
     [
@@ -17833,6 +17839,36 @@
       "status": "rejected",
       "updated_at": "2026-11-23T02:32:47.331155+00:00",
       "reason": "пропуск редактором или отказ фактчека"
+    },
+    "bd5258cd9de463f044bc": {
+      "status": "duplicate",
+      "updated_at": "2026-11-23T03:01:23.422788+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "a6d15ada952a6c40241b": {
+      "status": "duplicate",
+      "updated_at": "2026-11-23T03:01:23.422788+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "8c2216ed3dfd34f5780d": {
+      "status": "duplicate",
+      "updated_at": "2026-11-23T03:01:23.422788+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "aa654502605f049e5ddf": {
+      "status": "duplicate",
+      "updated_at": "2026-11-23T03:01:23.422788+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "33b5e952443360c99e85": {
+      "status": "duplicate",
+      "updated_at": "2026-11-23T03:01:23.422788+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "70de49428cda7d271815": {
+      "status": "duplicate",
+      "updated_at": "2026-11-23T03:01:23.422788+00:00",
+      "reason": "похож на ранее опубликованную новость"
     }
   },
   "events": {
@@ -19856,17 +19892,14 @@
   },
   "stats": {},
   "last_run": {
-    "at": "2026-11-23T02:32:47.332263+00:00",
+    "at": "2026-11-23T03:01:23.423315+00:00",
     "stats": {
-      "materials_received": 180,
-      "clusters": 160,
+      "materials_received": 184,
+      "clusters": 165,
       "duplicates": 1,
-      "published": 1,
-      "age_seconds_total": 344,
-      "rejected": 2,
       "llm_errors": 1,
       "llm_requests_local_counter": 45,
-      "duration_seconds": 117.43
+      "duration_seconds": 23.35
     }
   },
   "daily_stats": {
@@ -20056,15 +20089,12 @@
       "duration_seconds": 17.34
     },
     "2026-11-23": {
-      "materials_received": 180,
-      "clusters": 160,
+      "materials_received": 184,
+      "clusters": 165,
       "duplicates": 1,
-      "published": 1,
-      "age_seconds_total": 344,
-      "rejected": 2,
       "llm_errors": 1,
       "llm_requests_local_counter": 45,
-      "duration_seconds": 117.43
+      "duration_seconds": 23.35
     }
   }
 }
