@@ -1705,7 +1705,14 @@
     "44f9e668393c3ded24f2",
     "20402a215e86c789c6d1",
     "8d33a646a99685b9d726",
-    "1b37fec8919811c181ff"
+    "1b37fec8919811c181ff",
+    "01a677b0671442d745cb",
+    "28a7f367ad0f7dfc7ef2",
+    "8206de419b860d529ddd",
+    "96e8e4a7930e811c9df4",
+    "06019827bce0fe8d8bca",
+    "6ba0158fe1e479ced5ba",
+    "ca98383272e2f576e952"
   ],
   "titles": [
     [
@@ -4253,6 +4260,19 @@
       "сша",
       "тасс",
       "убеждать"
+    ],
+    [
+      "госдум",
+      "две",
+      "имеет",
+      "категори",
+      "кто",
+      "назвал",
+      "пенси",
+      "прав",
+      "право",
+      "рассказал",
+      "россиян"
     ]
   ],
   "heads": [
@@ -9350,6 +9370,27 @@
       "считает",
       "сша",
       "этом"
+    ],
+    [
+      "велик",
+      "военн",
+      "войны",
+      "госдум",
+      "граждан",
+      "две",
+      "депутат",
+      "имеют",
+      "имеющих",
+      "инвалидность",
+      "категори",
+      "назвал",
+      "отечественн",
+      "пенси",
+      "право",
+      "россиян",
+      "слов",
+      "травм",
+      "участник"
     ]
   ],
   "items": {
@@ -17757,6 +17798,41 @@
       "status": "published",
       "updated_at": "2026-11-23T02:06:34.222840+00:00",
       "reason": ""
+    },
+    "01a677b0671442d745cb": {
+      "status": "duplicate",
+      "updated_at": "2026-11-23T02:31:03.801303+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "28a7f367ad0f7dfc7ef2": {
+      "status": "duplicate",
+      "updated_at": "2026-11-23T02:31:03.801303+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "8206de419b860d529ddd": {
+      "status": "published",
+      "updated_at": "2026-11-23T02:31:44.493922+00:00",
+      "reason": ""
+    },
+    "96e8e4a7930e811c9df4": {
+      "status": "published",
+      "updated_at": "2026-11-23T02:31:44.493922+00:00",
+      "reason": ""
+    },
+    "06019827bce0fe8d8bca": {
+      "status": "rejected",
+      "updated_at": "2026-11-23T02:32:15.614839+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "6ba0158fe1e479ced5ba": {
+      "status": "rejected",
+      "updated_at": "2026-11-23T02:32:15.614839+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "ca98383272e2f576e952": {
+      "status": "rejected",
+      "updated_at": "2026-11-23T02:32:47.331155+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
     }
   },
   "events": {
@@ -19763,23 +19839,34 @@
       "sources": [
         "ТАСС"
       ]
+    },
+    "327e06a91d54551264c5": {
+      "status": "published",
+      "headline": "Госдума назвала категории россиян, имеющих право на две пенсии",
+      "published_at": "2026-11-23T02:31:44.494204+00:00",
+      "sources": [
+        "Лента.ру",
+        "ТАСС"
+      ]
     }
   },
   "budget": {
     "day": "2026-11-23",
-    "n": 40
+    "n": 45
   },
   "stats": {},
   "last_run": {
-    "at": "2026-11-23T02:06:34.223044+00:00",
+    "at": "2026-11-23T02:32:47.332263+00:00",
     "stats": {
       "materials_received": 180,
-      "clusters": 157,
+      "clusters": 160,
+      "duplicates": 1,
+      "published": 1,
+      "age_seconds_total": 344,
       "rejected": 2,
-      "published": 2,
-      "age_seconds_total": 1284,
-      "llm_requests_local_counter": 40,
-      "duration_seconds": 333.62
+      "llm_errors": 1,
+      "llm_requests_local_counter": 45,
+      "duration_seconds": 117.43
     }
   },
   "daily_stats": {
@@ -19970,12 +20057,14 @@
     },
     "2026-11-23": {
       "materials_received": 180,
-      "clusters": 157,
+      "clusters": 160,
+      "duplicates": 1,
+      "published": 1,
+      "age_seconds_total": 344,
       "rejected": 2,
-      "published": 2,
-      "age_seconds_total": 1284,
-      "llm_requests_local_counter": 40,
-      "duration_seconds": 333.62
+      "llm_errors": 1,
+      "llm_requests_local_counter": 45,
+      "duration_seconds": 117.43
     }
   }
 }
