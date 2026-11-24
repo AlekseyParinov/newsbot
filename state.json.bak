@@ -1786,7 +1786,10 @@
     "25342bc0ace86b084263",
     "45d6f403a3d79d1007da",
     "75b3a27793502e9c6413",
-    "17b1fad6c0c9cc3f61e9"
+    "17b1fad6c0c9cc3f61e9",
+    "9c0c2b71b24c3e3d6105",
+    "16157c4df0f29424bcd4",
+    "b090465526e1fb83ee02"
   ],
   "titles": [
     [
@@ -18602,6 +18605,21 @@
       "status": "published",
       "updated_at": "2026-11-24T02:04:45.601485+00:00",
       "reason": ""
+    },
+    "9c0c2b71b24c3e3d6105": {
+      "status": "rejected",
+      "updated_at": "2026-11-24T02:24:39.877772+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "16157c4df0f29424bcd4": {
+      "status": "rejected",
+      "updated_at": "2026-11-24T02:25:07.045049+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "b090465526e1fb83ee02": {
+      "status": "rejected",
+      "updated_at": "2026-11-24T02:25:07.045049+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
     }
   },
   "events": {
@@ -20705,20 +20723,18 @@
   },
   "budget": {
     "day": "2026-11-24",
-    "n": 42
+    "n": 45
   },
   "stats": {},
   "last_run": {
-    "at": "2026-11-24T02:04:45.601680+00:00",
+    "at": "2026-11-24T02:25:07.046055+00:00",
     "stats": {
-      "materials_received": 152,
-      "clusters": 135,
-      "duplicates": 2,
-      "published": 2,
-      "age_seconds_total": 3436,
-      "rejected": 5,
-      "llm_requests_local_counter": 42,
-      "duration_seconds": 225.58
+      "materials_received": 151,
+      "clusters": 136,
+      "rejected": 2,
+      "llm_errors": 1,
+      "llm_requests_local_counter": 45,
+      "duration_seconds": 82.68
     }
   },
   "daily_stats": {
@@ -20915,14 +20931,12 @@
       "duration_seconds": 16.13
     },
     "2026-11-24": {
-      "materials_received": 152,
-      "clusters": 135,
-      "duplicates": 2,
-      "published": 2,
-      "age_seconds_total": 3436,
-      "rejected": 5,
-      "llm_requests_local_counter": 42,
-      "duration_seconds": 225.58
+      "materials_received": 151,
+      "clusters": 136,
+      "rejected": 2,
+      "llm_errors": 1,
+      "llm_requests_local_counter": 45,
+      "duration_seconds": 82.68
     }
   }
 }
