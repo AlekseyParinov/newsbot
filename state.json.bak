@@ -1917,7 +1917,12 @@
     "304e6453657078d51976",
     "83c2c807df9ca942b22f",
     "bb742dd0502cdf888bcf",
-    "f7217e93283f295f6c9f"
+    "f7217e93283f295f6c9f",
+    "343dc0dd7425e0f8a43e",
+    "28e18be1a7bf3087aacb",
+    "b20159d4af0fb2b45780",
+    "3bc22700536ee79f84c0",
+    "5f97d3564fd7d5e1083e"
   ],
   "titles": [
     [
@@ -20124,6 +20129,31 @@
       "status": "duplicate",
       "updated_at": "2026-11-26T04:01:43.634729+00:00",
       "reason": "похож на ранее опубликованную новость"
+    },
+    "343dc0dd7425e0f8a43e": {
+      "status": "duplicate",
+      "updated_at": "2026-11-26T07:01:26.041664+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "28e18be1a7bf3087aacb": {
+      "status": "duplicate",
+      "updated_at": "2026-11-26T07:01:26.041664+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "b20159d4af0fb2b45780": {
+      "status": "duplicate",
+      "updated_at": "2026-11-26T07:01:26.041664+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "3bc22700536ee79f84c0": {
+      "status": "duplicate",
+      "updated_at": "2026-11-26T07:01:26.041664+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "5f97d3564fd7d5e1083e": {
+      "status": "duplicate",
+      "updated_at": "2026-11-26T07:01:26.041664+00:00",
+      "reason": "похож на ранее опубликованную новость"
     }
   },
   "events": {
@@ -22413,13 +22443,14 @@
   },
   "stats": {},
   "last_run": {
-    "at": "2026-11-26T06:31:09.873925+00:00",
+    "at": "2026-11-26T07:01:26.042509+00:00",
     "stats": {
-      "materials_received": 253,
-      "clusters": 231,
+      "materials_received": 277,
+      "clusters": 254,
+      "duplicates": 1,
       "llm_errors": 1,
       "llm_requests_local_counter": 45,
-      "duration_seconds": 18.57
+      "duration_seconds": 24.43
     }
   },
   "daily_stats": {
@@ -22630,11 +22661,12 @@
       "duration_seconds": 36.43
     },
     "2026-11-26": {
-      "materials_received": 253,
-      "clusters": 231,
+      "materials_received": 277,
+      "clusters": 254,
+      "duplicates": 1,
       "llm_errors": 1,
       "llm_requests_local_counter": 45,
-      "duration_seconds": 18.57
+      "duration_seconds": 24.43
     }
   }
 }
