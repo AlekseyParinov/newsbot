@@ -1922,7 +1922,11 @@
     "28e18be1a7bf3087aacb",
     "b20159d4af0fb2b45780",
     "3bc22700536ee79f84c0",
-    "5f97d3564fd7d5e1083e"
+    "5f97d3564fd7d5e1083e",
+    "1b89ecd7f5d76104986b",
+    "587f885155d26752bd63",
+    "a539b69a68e20ad05c00",
+    "af41796d49f86d09ad04"
   ],
   "titles": [
     [
@@ -20154,6 +20158,26 @@
       "status": "duplicate",
       "updated_at": "2026-11-26T07:01:26.041664+00:00",
       "reason": "похож на ранее опубликованную новость"
+    },
+    "1b89ecd7f5d76104986b": {
+      "status": "duplicate",
+      "updated_at": "2026-11-26T21:31:07.849127+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "587f885155d26752bd63": {
+      "status": "duplicate",
+      "updated_at": "2026-11-26T21:31:07.849127+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "a539b69a68e20ad05c00": {
+      "status": "duplicate",
+      "updated_at": "2026-11-26T21:31:07.849127+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "af41796d49f86d09ad04": {
+      "status": "duplicate",
+      "updated_at": "2026-11-26T21:31:07.849127+00:00",
+      "reason": "похож на ранее опубликованную новость"
     }
   },
   "events": {
@@ -22443,13 +22467,14 @@
   },
   "stats": {},
   "last_run": {
-    "at": "2026-11-26T21:01:21.598198+00:00",
+    "at": "2026-11-26T21:31:07.849679+00:00",
     "stats": {
-      "materials_received": 258,
-      "clusters": 239,
+      "materials_received": 241,
+      "clusters": 226,
+      "duplicates": 1,
       "llm_errors": 1,
       "llm_requests_local_counter": 45,
-      "duration_seconds": 20.38
+      "duration_seconds": 18.53
     }
   },
   "daily_stats": {
@@ -22660,11 +22685,12 @@
       "duration_seconds": 36.43
     },
     "2026-11-26": {
-      "materials_received": 258,
-      "clusters": 239,
+      "materials_received": 241,
+      "clusters": 226,
+      "duplicates": 1,
       "llm_errors": 1,
       "llm_requests_local_counter": 45,
-      "duration_seconds": 20.38
+      "duration_seconds": 18.53
     }
   }
 }
