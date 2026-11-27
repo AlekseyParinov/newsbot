@@ -1974,7 +1974,11 @@
     "0498be0b1e8e5a0449f8",
     "9a970937877165b98fbe",
     "e0c49b5b8c5a9c02ac1a",
-    "d5656245be62f95ade1b"
+    "d5656245be62f95ade1b",
+    "d2720bbdf53743bdaf74",
+    "3053c797ee79c9e946c1",
+    "8b423f77e02dae69783b",
+    "7323bce1773dde58702c"
   ],
   "titles": [
     [
@@ -20659,6 +20663,26 @@
       "status": "duplicate",
       "updated_at": "2026-11-27T01:34:12.092167+00:00",
       "reason": "дубль по готовому заголовку"
+    },
+    "d2720bbdf53743bdaf74": {
+      "status": "duplicate",
+      "updated_at": "2026-11-27T02:01:21.373859+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "3053c797ee79c9e946c1": {
+      "status": "duplicate",
+      "updated_at": "2026-11-27T02:01:21.373859+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "8b423f77e02dae69783b": {
+      "status": "duplicate",
+      "updated_at": "2026-11-27T02:01:21.373859+00:00",
+      "reason": "похож на ранее опубликованную новость"
+    },
+    "7323bce1773dde58702c": {
+      "status": "duplicate",
+      "updated_at": "2026-11-27T02:01:21.373859+00:00",
+      "reason": "похож на ранее опубликованную новость"
     }
   },
   "events": {
@@ -22998,15 +23022,14 @@
   },
   "stats": {},
   "last_run": {
-    "at": "2026-11-27T01:34:12.092763+00:00",
+    "at": "2026-11-27T02:01:21.374510+00:00",
     "stats": {
-      "materials_received": 180,
-      "clusters": 166,
-      "rejected": 1,
-      "duplicates": 2,
+      "materials_received": 181,
+      "clusters": 167,
+      "duplicates": 1,
       "llm_errors": 1,
       "llm_requests_local_counter": 45,
-      "duration_seconds": 203.41
+      "duration_seconds": 21.15
     }
   },
   "daily_stats": {
@@ -23217,13 +23240,12 @@
       "duration_seconds": 18.44
     },
     "2026-11-27": {
-      "materials_received": 180,
-      "clusters": 166,
-      "rejected": 1,
-      "duplicates": 2,
+      "materials_received": 181,
+      "clusters": 167,
+      "duplicates": 1,
       "llm_errors": 1,
       "llm_requests_local_counter": 45,
-      "duration_seconds": 203.41
+      "duration_seconds": 21.15
     }
   }
 }
