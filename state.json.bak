@@ -2038,7 +2038,13 @@
     "ffb9e4dba1a034f4a4e3",
     "2f30ae022a5dff0d1699",
     "4816357f8a52fe416860",
-    "ada3c6e76f2d0bc1e3e6"
+    "ada3c6e76f2d0bc1e3e6",
+    "2aac151cae027f904001",
+    "02948050e00d138a31b4",
+    "89212131d57000b82f50",
+    "e219f0a067bdfc6d55a1",
+    "0965bccca7155b48ef9c",
+    "6e83a9a28c7d963e8679"
   ],
   "titles": [
     [
@@ -5111,6 +5117,17 @@
       "оплачивать",
       "предложил",
       "стажа"
+    ],
+    [
+      "bloomberg",
+      "nvidia",
+      "китае",
+      "найденных",
+      "после",
+      "скандал",
+      "узнал",
+      "хуанг",
+      "чипах"
     ]
   ],
   "heads": [
@@ -11325,6 +11342,32 @@
       "сейчас",
       "стажа",
       "стаже"
+    ],
+    [
+      "blackwell",
+      "bloomberg",
+      "nvidia",
+      "американских",
+      "без",
+      "власт",
+      "запрещен",
+      "китае",
+      "китай",
+      "китайск",
+      "найденных",
+      "обнаружил",
+      "после",
+      "поставк",
+      "процессор",
+      "разрешени",
+      "сервер",
+      "скандал",
+      "таких",
+      "узнал",
+      "хуанг",
+      "чипах",
+      "чипов",
+      "шанха"
     ]
   ],
   "items": {
@@ -21397,6 +21440,36 @@
       "status": "published",
       "updated_at": "2026-11-28T02:34:38.008605+00:00",
       "reason": ""
+    },
+    "2aac151cae027f904001": {
+      "status": "rejected",
+      "updated_at": "2026-11-28T03:02:32.456846+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "02948050e00d138a31b4": {
+      "status": "rejected",
+      "updated_at": "2026-11-28T03:02:32.456846+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "89212131d57000b82f50": {
+      "status": "rejected",
+      "updated_at": "2026-11-28T03:03:11.499975+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
+    },
+    "e219f0a067bdfc6d55a1": {
+      "status": "published",
+      "updated_at": "2026-11-28T03:04:49.084801+00:00",
+      "reason": ""
+    },
+    "0965bccca7155b48ef9c": {
+      "status": "duplicate",
+      "updated_at": "2026-11-28T03:05:53.578213+00:00",
+      "reason": "дубль по готовому заголовку"
+    },
+    "6e83a9a28c7d963e8679": {
+      "status": "rejected",
+      "updated_at": "2026-11-28T03:06:08.954744+00:00",
+      "reason": "пропуск редактором или отказ фактчека"
     }
   },
   "events": {
@@ -23816,23 +23889,33 @@
       "sources": [
         "ТАСС"
       ]
+    },
+    "cf9efb1fc9c32e83ce0d": {
+      "status": "published",
+      "headline": "Bloomberg узнал о найденных в Китае чипах Nvidia после скандала с Хуангом",
+      "published_at": "2026-11-28T03:04:49.084973+00:00",
+      "sources": [
+        "РБК"
+      ]
     }
   },
   "budget": {
     "day": "2026-11-28",
-    "n": 36
+    "n": 45
   },
   "stats": {},
   "last_run": {
-    "at": "2026-11-28T02:34:38.008785+00:00",
+    "at": "2026-11-28T03:06:08.955672+00:00",
     "stats": {
-      "materials_received": 157,
-      "clusters": 141,
-      "duplicates": 2,
-      "published": 2,
-      "age_seconds_total": 2688,
-      "llm_requests_local_counter": 36,
-      "duration_seconds": 227.11
+      "materials_received": 149,
+      "clusters": 134,
+      "rejected": 3,
+      "published": 1,
+      "age_seconds_total": 1627,
+      "duplicates": 1,
+      "llm_errors": 1,
+      "llm_requests_local_counter": 45,
+      "duration_seconds": 305.96
     }
   },
   "daily_stats": {
@@ -24044,13 +24127,15 @@
       "duration_seconds": 13.98
     },
     "2026-11-28": {
-      "materials_received": 157,
-      "clusters": 141,
-      "duplicates": 2,
-      "published": 2,
-      "age_seconds_total": 2688,
-      "llm_requests_local_counter": 36,
-      "duration_seconds": 227.11
+      "materials_received": 149,
+      "clusters": 134,
+      "rejected": 3,
+      "published": 1,
+      "age_seconds_total": 1627,
+      "duplicates": 1,
+      "llm_errors": 1,
+      "llm_requests_local_counter": 45,
+      "duration_seconds": 305.96
     }
   }
 }
